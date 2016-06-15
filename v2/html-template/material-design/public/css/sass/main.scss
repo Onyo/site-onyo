@@ -1,0 +1,58 @@
+$mainBlue: #2F4472;
+main {
+	width: 100%;
+
+	margin-top: 50em;
+
+	form {
+		max-width: 50em;
+		margin: 0 auto;
+	}
+}
+
+.user-input {
+	border: 1px solid $mainBlue;
+	background-color: #fff;
+	padding: 0.635em;
+}
+
+.section-header {
+	text-align: center;
+	span {
+		font-weight: bold;
+	}
+}
+.section-secondary-header {
+	font-weight: bold;
+	font-size: 1.635em;
+}
+.section-main-message {
+	font-size: 1em;
+	color: #fff;
+}
+
+section {
+	h2 {
+		@extend .section-header;
+		color: $mainBlue;
+	}
+	h3 {
+		@extend .section-secondary-header;
+	}
+	p {
+		@extend .section-main-message;
+	}
+}
+
+form {
+	label {
+		display:block;
+	}
+	input[type=text] ,input[type=email] ,input[type=password] ,textarea {
+		@extend .user-input;
+		width: 90%;
+	}
+}
+footer.mdl-mega-footer {
+	background-color: $mainBlue;
+}
