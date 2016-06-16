@@ -1,0 +1,70 @@
+@import 'reset';
+body,
+html
+{
+    color: #494949;
+    background-color: #fff;
+}
+.container
+{
+    width: 900px;
+    margin: auto;
+    padding: 20px 0;
+    .all-company
+    {
+        ul
+        {
+            margin-top: 13px;
+            display: none;
+            li
+            {
+                padding: 7px;
+
+                cursor: pointer;
+
+                border-top: 1px solid;
+                &:first-child
+                {
+                    border: none;
+                }
+                &:hover
+                {
+                    background-color: #f2f2f2;
+                }
+                b
+                {
+                    position: relative;
+
+                    float: right;
+
+                    padding-left: 20px;
+                    &.online,
+                    &.offline
+                    {
+                        &:before
+                        {
+                            position: absolute;
+                            top: 5px;
+                            left: -2px;
+
+                            width: 17px;
+                            height: 17px;
+
+                            content: '';
+
+                            border-radius: 50%;
+                        }
+                    }
+                    &.online:before
+                    {
+                        background-color: #58924d;
+                    }
+                    &.offline:before
+                    {
+                        background-color: #c40a25;
+                    }
+                }
+            }
+        }
+    }
+}
