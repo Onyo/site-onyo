@@ -129,12 +129,12 @@ var allcompanies = {
 		"displayName": "Shopping Aricanduva"
 	}, {
 		"numericalId": 38,
-		"name": "Baked Potato AnÃ¡lia Franco",
-		"displayName": "AnÃ¡lia Franco"
+		"name": "Baked Potato Anália Franco",
+		"displayName": "Anália Franco"
 	}, {
 		"numericalId": 77,
-		"name": "Baked Potato Shopping TamborÃ©",
-		"displayName": "Shopping TamborÃ©"
+		"name": "Baked Potato Shopping Tamboré",
+		"displayName": "Shopping Tamboré"
 	}, {
 		"numericalId": 75,
 		"name": "Baked Potato Santana Parque Shopping",
@@ -312,7 +312,7 @@ companies = {
 };
 
 setInterval(function(){
-
+	$(".all-company ul").html("");
 	companies.loadComapny();
 }, 50000);
 
