@@ -250,11 +250,31 @@ var allcompanies = {
 var companies = {};
 
 companies = {
-	showCompany : function ( elem ){
+	showCompany : function ( elem, fila, qnt ){
 
-		$(".all-company ul").append("<li>" + elem.name + "<b class='" + elem.status + "'>" + elem.status + "</b></li>");
+		$(".all-company ul").append("<li id='" + elem.numericalId + "'><strong> " + elem.numericalId + " </strong> " + elem.name + "<b class='" + elem.status + "'>" + elem.status + "</b></li>");
+		if (fila===qnt) {
+			var end = 0,
+			total = $(".all-company ul li").length;
+
+			$(".all-company ul li").sort(function(a, b) {
+				return parseInt(a.id) - parseInt(b.id);
+			}).each(function() {
+				end++;
+				var elem = $(this);
+
+				elem.remove();
+				$(elem).appendTo(".all-company ul");
+				if (end ===total) {
+
+					$(".all-company ul").show();
+				}
+			});
+		}
+
 	},
-	statusCompany : function ( elem ){
+	statusCompany : function ( elem, qnt, fila){
+
 		$.ajax({
 			cache: false,
 			dataType: "json",
@@ -268,7 +288,7 @@ companies = {
 					elem.status = "offline";
 				}
 
-				companies.showCompany(elem);
+				companies.showCompany(elem, fila, qnt);
 			},
 			error: function( data ) {
 
@@ -279,11 +299,14 @@ companies = {
 		});
 	},
 	loadComapny : function (){
-		var teste = {};
+		var qnt = allcompanies.data.length,
+		fila = 0;
+
 		for (var i = 0; i < allcompanies.data.length; i++) {
 			var elem = allcompanies.data[i];
+			fila++;
 
-			this.statusCompany(elem)
+			this.statusCompany(elem, qnt, fila);
 		}
 	}
 };
