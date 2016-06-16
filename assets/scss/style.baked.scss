@@ -14,8 +14,9 @@ html
     {
         ul
         {
-            margin-top: 13px;
             display: none;
+
+            margin-top: 13px;
             li
             {
                 padding: 7px;
@@ -44,8 +45,8 @@ html
                         &:before
                         {
                             position: absolute;
-                            top: 5px;
-                            left: -2px;
+                            top: 4px;
+                            left: 0;
 
                             width: 17px;
                             height: 17px;
