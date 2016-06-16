@@ -57,8 +57,8 @@ var allcompanies = {
 		"displayName": "Boulevard Shopping Bauru"
 	}, {
 		"numericalId": 65,
-		"name": "Baked Potato Shopping MetrÃ³pole",
-		"displayName": "Shopping MetrÃ³pole"
+		"name": "Baked Potato Shopping Metrópole",
+		"displayName": "Shopping Metrópole"
 	}, {
 		"numericalId": 68,
 		"name": "Baked Potato Parque das Bandeiras",
@@ -113,8 +113,8 @@ var allcompanies = {
 		"displayName": "Morumbi Piso Superior"
 	}, {
 		"numericalId": 31,
-		"name": "Baked Potato Vila OlÃ­mpia",
-		"displayName": "Shopping Vila OlÃ­mpia"
+		"name": "Baked Potato Vila Olímpia",
+		"displayName": "Shopping Vila Olímpia"
 	}, {
 		"numericalId": 18,
 		"name": "Baked Potato Shopping Eldorado",
@@ -312,7 +312,7 @@ companies = {
 };
 
 setInterval(function(){
-	$(".all-company ul").html("");
+	$(".all-company ul").html("").hide();
 	companies.loadComapny();
 }, 50000);
 
