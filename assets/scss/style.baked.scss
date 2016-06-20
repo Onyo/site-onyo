@@ -69,3 +69,36 @@ html
         }
     }
 }
+
+footer
+{
+    font-size: .9em;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    background: #727272;
+    a
+    {
+        font-weight: bold;
+
+        color: #fff;
+    }
+    span
+    {
+        &.right
+        {
+            float: right;
+        }
+        &.left
+        {
+            float: left;
+        }
+    }
+    ul li{
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
