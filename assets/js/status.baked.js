@@ -250,6 +250,12 @@ var allcompanies = {
 var companies = {};
 
 companies = {
+	refreshRequest : function (){
+		setInterval(function(){
+			$(".all-company ul").html("").hide();
+			companies.loadComapny();
+		}, 300000);
+	},
 	showCompany : function ( elem, fila, qnt ){
 
 		$(".all-company ul").append("<li id='" + elem.numericalId + "'><strong> " + elem.numericalId + " </strong> " + elem.name + "<b class='" + elem.status + "'>" + elem.status + "</b></li>");
@@ -270,6 +276,7 @@ companies = {
 					$(".all-company ul").show();
 				}
 			});
+			this.refreshRequest();
 		}
 
 	},
@@ -292,7 +299,7 @@ companies = {
 			},
 			error: function( data ) {
 
-				console.log("error");
+				console.error(data);
 				return true;
 			}
 
@@ -310,11 +317,6 @@ companies = {
 		}
 	}
 };
-
-setInterval(function(){
-	$(".all-company ul").html("").hide();
-	companies.loadComapny();
-}, 50000);
 
 companies.init = function () {
 	companies.loadComapny();
