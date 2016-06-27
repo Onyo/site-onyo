@@ -59,11 +59,13 @@ var allcompanies = {
 		"numericalId": 65,
 		"name": "Baked Potato Shopping Metrópole",
 		"displayName": "Shopping Metrópole"
-	}, {
-		"numericalId": 68,
-		"name": "Baked Potato Parque das Bandeiras",
-		"displayName": "Parque das Bandeiras"
-	}, {
+	},
+	// {
+	// 	"numericalId": 68,
+	// 	"name": "Baked Potato Parque das Bandeiras",
+	// 	"displayName": "Parque das Bandeiras"
+	// },
+	{
 		"numericalId": 70,
 		"name": "Baked Potato Shopping PraÃ§a da MoÃ§a",
 		"displayName": "Shopping PraÃ§a da MoÃ§a"
@@ -71,11 +73,13 @@ var allcompanies = {
 		"numericalId": 72,
 		"name": "Baked Potato São Bernardo Plaza Shopping",
 		"displayName": "São Bernardo Plaza Shopping"
-	}, {
-		"numericalId": 66,
-		"name": "Baked Potato Mooca Plaza Shopping",
-		"displayName": "Mooca Plaza Shopping"
-	}, {
+	},
+	// {
+	// 	"numericalId": 66,
+	// 	"name": "Baked Potato Mooca Plaza Shopping",
+	// 	"displayName": "Mooca Plaza Shopping"
+	// },
+	{
 		"numericalId": 73,
 		"name": "Baked Potato Park Shopping São Caetano",
 		"displayName": "Park Shopping São Caetano"
@@ -175,11 +179,13 @@ var allcompanies = {
 		"numericalId": 48,
 		"name": "Baked Potato Parque Dom Pedro Shopping",
 		"displayName": "Parque Dom Pedro Shopping"
-	}, {
-		"numericalId": 44,
-		"name": "Baked Potato Continental Shopping",
-		"displayName": "Continental Shopping"
-	}, {
+	},
+	// {
+	// 	"numericalId": 44,
+	// 	"name": "Baked Potato Continental Shopping",
+	// 	"displayName": "Continental Shopping"
+	// },
+	{
 		"numericalId": 42,
 		"name": "Baked Potato Colinas Shopping",
 		"displayName": "Colinas Shopping"
@@ -187,11 +193,13 @@ var allcompanies = {
 		"numericalId": 40,
 		"name": "Baked Potato Parque Shopping Barueri",
 		"displayName": "Parque Shopping Barueri"
-	}, {
-		"numericalId": 46,
-		"name": "Baked Potato Shopping Metro Santa Cruz 2",
-		"displayName": "Metro Santa Cruz 2"
-	}, {
+	},
+	// {
+	// 	"numericalId": 46,
+	// 	"name": "Baked Potato Shopping Metro Santa Cruz 2",
+	// 	"displayName": "Metro Santa Cruz 2"
+	// },
+	{
 		"numericalId": 47,
 		"name": "Baked Potato Aeroporto de Guarulhos Term. 2",
 		"displayName": "Aeroporto de Guarulhos Term. 2"
@@ -203,11 +211,13 @@ var allcompanies = {
 		"numericalId": 50,
 		"name": "Baked Potato Galleria Shopping",
 		"displayName": "Galleria Shopping"
-	}, {
-		"numericalId": 49,
-		"name": "Baked Potato Hipermercado Extra Itaim",
-		"displayName": "Hipermercado Extra Itam"
-	}, {
+	},
+	// {
+	// 	"numericalId": 49,
+	// 	"name": "Baked Potato Hipermercado Extra Itaim",
+	// 	"displayName": "Hipermercado Extra Itam"
+	// },
+	{
 		"numericalId": 51,
 		"name": "Baked Potato Golden Square",
 		"displayName": "Golden Square"
@@ -219,11 +229,13 @@ var allcompanies = {
 		"numericalId": 56,
 		"name": "Baked Potato Iguatemi Campinas (quiosque)",
 		"displayName": "Iguatemi Campinas (quiosque)"
-	}, {
-		"numericalId": 58,
-		"name": "Baked Potato Iguatemi Rio Preto",
-		"displayName": "Iguatemi Rio Preto"
-	}, {
+	},
+	// {
+	// 	"numericalId": 58,
+	// 	"name": "Baked Potato Iguatemi Rio Preto",
+	// 	"displayName": "Iguatemi Rio Preto"
+	// },
+	{
 		"numericalId": 55,
 		"name": "Baked Potato Iguatemi Campinas",
 		"displayName": "Iguatemi Campinas"
@@ -250,12 +262,6 @@ var allcompanies = {
 var companies = {};
 
 companies = {
-	refreshRequest : function (){
-		setInterval(function(){
-			$(".all-company ul").html("").hide();
-			companies.loadComapny();
-		}, 300000);
-	},
 	showCompany : function ( elem, fila, qnt ){
 
 		$(".all-company ul").append("<li id='" + elem.numericalId + "'><strong> " + elem.numericalId + " </strong> " + elem.name + "<b class='" + elem.status + "'>" + elem.status + "</b></li>");
@@ -271,12 +277,15 @@ companies = {
 
 				elem.remove();
 				$(elem).appendTo(".all-company ul");
-				if (end ===total) {
+				if (end === total) {
 
 					$(".all-company ul").show();
+
+					setTimeout(function(){
+						companies.loadComapny();
+					}, 300000);
 				}
 			});
-			this.refreshRequest();
 		}
 
 	},
@@ -306,6 +315,7 @@ companies = {
 		});
 	},
 	loadComapny : function (){
+		$(".all-company ul").html("").hide();
 		var qnt = allcompanies.data.length,
 		fila = 0;
 
