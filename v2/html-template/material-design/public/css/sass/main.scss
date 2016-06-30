@@ -1,8 +1,14 @@
+/* Responsive settings */
+$break-small: 320px;
+$break-large: 1200px;
+
+/* Main Setting */
 $mainBlue: #2F4472;
+
+
+/* Styling */
 main {
 	width: 100%;
-
-	margin-top: 50em;
 
 	form {
 		max-width: 50em;
@@ -16,25 +22,27 @@ main {
 	padding: 0.635em;
 }
 
+/* Start section styling */
 .section-header {
+	padding-top: 1.5em;
 	text-align: center;
 	span {
 		font-weight: bold;
 	}
 }
+
 .section-secondary-header {
 	font-weight: bold;
 	font-size: 1.635em;
 }
+
 .section-main-message {
 	font-size: 1em;
-	color: #fff;
 }
 
 section {
 	h2 {
 		@extend .section-header;
-		color: $mainBlue;
 	}
 	h3 {
 		@extend .section-secondary-header;
@@ -43,6 +51,19 @@ section {
 		@extend .section-main-message;
 	}
 }
+
+section.even {
+	h2, h3, p {
+		color: $mainBlue;
+	}
+}
+
+section.odd {
+	h2, h3, p {
+		color: #fff;
+	}
+}
+/* End section styling */
 
 form {
 	label {
@@ -55,4 +76,86 @@ form {
 }
 footer.mdl-mega-footer {
 	background-color: $mainBlue;
+}
+
+.main-bg.main-home-bg {
+  height: 813px;
+  object-fit: contain;
+}
+
+.main-home-bg {
+	background: transparent url("assets/main-bg-home.png") top center no-repeat;
+}
+
+.main-text-banner {
+	margin-top: 5em;
+	min-height: 23em;
+
+	p {
+		background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
+		padding-bottom: 1em;
+	}
+}
+
+.main-text-banner, .main-text-banner * {
+
+	.main-message {
+		font-size: 1.800em;
+		line-height: 1em;
+		display: block;
+	}
+	
+	text-align: center;
+	font-size: 1.865em;
+	line-height: 1em;
+	color: #fff;
+}
+
+/* Styling Content Block: What is it */
+.what-is-it-block {
+	color: #2f4472;
+	text-align: center;
+	padding: 0.5em;
+}
+
+/* Styling Content Block: About us */
+.secondary-bg {
+	min-height: 68.188em;
+	object-fit: contain;
+} 
+
+section.about-us {
+	background: transparent url("assets/secondary-bg-about-us.png") left top no-repeat;
+
+	h3 {
+		font-size: 2.5em;
+	}
+
+	h3 + p {
+		font-size: 1.685em;
+	}
+}
+
+.mdl-cell.carrers {
+	@media screen and (min-width: $break-large) {
+		border-left: 1px solid #fff;
+		padding-left: 1.5em;
+	}
+
+	@media screen and (max-width: $break-small) {
+		border-top: 1px solid #fff;
+		padding-top: 1.5em;
+	}
+}
+
+.job-position-description {
+	@media screen and (min-width: $break-large) {
+		border-left: 1px solid #fff;
+		padding-left: 1.5em;
+	}
+
+	@media screen and (max-width: $break-small) {
+		border-bottom: 1px solid #fff;
+		padding-bottom: 1.5em;
+	}
 }

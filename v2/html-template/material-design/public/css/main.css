@@ -1,6 +1,8 @@
+/* Responsive settings */
+/* Main Setting */
+/* Styling */
 main {
-  width: 100%;
-  margin-top: 50em; }
+  width: 100%; }
   main form {
     max-width: 50em;
     margin: 0 auto; }
@@ -10,7 +12,9 @@ main {
   background-color: #fff;
   padding: 0.635em; }
 
+/* Start section styling */
 .section-header, section h2 {
+  padding-top: 1.5em;
   text-align: center; }
   .section-header span, section h2 span {
     font-weight: bold; }
@@ -20,12 +24,15 @@ main {
   font-size: 1.635em; }
 
 .section-main-message, section p {
-  font-size: 1em;
-  color: #fff; }
+  font-size: 1em; }
 
-section h2 {
+section.even h2, section.even h3, section.even p {
   color: #2F4472; }
 
+section.odd h2, section.odd h3, section.odd p {
+  color: #fff; }
+
+/* End section styling */
 form label {
   display: block; }
 form input[type=text], form input[type=email], form input[type=password], form textarea {
@@ -33,5 +40,65 @@ form input[type=text], form input[type=email], form input[type=password], form t
 
 footer.mdl-mega-footer {
   background-color: #2F4472; }
+
+.main-bg.main-home-bg {
+  height: 813px;
+  object-fit: contain; }
+
+.main-home-bg {
+  background: transparent url("assets/main-bg-home.png") top center no-repeat; }
+
+.main-text-banner {
+  margin-top: 5em;
+  min-height: 23em; }
+  .main-text-banner p {
+    background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
+    padding-bottom: 1em; }
+
+.main-text-banner, .main-text-banner * {
+  text-align: center;
+  font-size: 1.865em;
+  line-height: 1em;
+  color: #fff; }
+  .main-text-banner .main-message, .main-text-banner * .main-message {
+    font-size: 1.800em;
+    line-height: 1em;
+    display: block; }
+
+/* Styling Content Block: What is it */
+.what-is-it-block {
+  color: #2f4472;
+  text-align: center;
+  padding: 0.5em; }
+
+/* Styling Content Block: About us */
+.secondary-bg {
+  min-height: 68.188em;
+  object-fit: contain; }
+
+section.about-us {
+  background: transparent url("assets/secondary-bg-about-us.png") left top no-repeat; }
+  section.about-us h3 {
+    font-size: 2.5em; }
+  section.about-us h3 + p {
+    font-size: 1.685em; }
+
+@media screen and (min-width: 1200px) {
+  .mdl-cell.carrers {
+    border-left: 1px solid #fff;
+    padding-left: 1.5em; } }
+@media screen and (max-width: 320px) {
+  .mdl-cell.carrers {
+    border-top: 1px solid #fff;
+    padding-top: 1.5em; } }
+
+@media screen and (min-width: 1200px) {
+  .job-position-description {
+    border-left: 1px solid #fff;
+    padding-left: 1.5em; } }
+@media screen and (max-width: 320px) {
+  .job-position-description {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5em; } }
 
 /*# sourceMappingURL=main.css.map */
