@@ -7,15 +7,11 @@ main {
     max-width: 50em;
     margin: 0 auto; }
 
-.user-input, form input[type=text], form input[type=email], form input[type=password], form textarea {
-  border: 1px solid #2F4472;
-  background-color: #fff;
-  padding: 0.635em; }
-
 /* Start section styling */
 .section-header, section h2 {
-  padding-top: 1.5em;
-  text-align: center; }
+  padding: 1.5em 0 1em 0;
+  text-align: center;
+  margin: 0 0 1em 0; }
   .section-header span, section h2 span {
     font-weight: bold; }
 
@@ -26,18 +22,21 @@ main {
 .section-main-message, section p {
   font-size: 1em; }
 
+section a.mdl-button--colored {
+  font-size: 1.2em;
+  padding: 0.5em 2em; }
+
+section.even .section-header, section.even h2 {
+  background: transparent url("assets/section-header-separator-even.gif") bottom center no-repeat; }
 section.even h2, section.even h3, section.even p {
   color: #2F4472; }
 
+section.odd .section-header, section.odd h2 {
+  background: transparent url("assets/section-header-separator-odd.gif") bottom center no-repeat; }
 section.odd h2, section.odd h3, section.odd p {
   color: #fff; }
 
 /* End section styling */
-form label {
-  display: block; }
-form input[type=text], form input[type=email], form input[type=password], form textarea {
-  width: 90%; }
-
 footer.mdl-mega-footer {
   background-color: #2F4472; }
 
@@ -75,13 +74,13 @@ footer.mdl-mega-footer {
 .secondary-bg {
   min-height: 68.188em;
   object-fit: contain; }
+  .secondary-bg h3 {
+    font-size: 2.5em; }
+  .secondary-bg h3 + p {
+    font-size: 1.685em; }
 
 section.about-us {
   background: transparent url("assets/secondary-bg-about-us.png") left top no-repeat; }
-  section.about-us h3 {
-    font-size: 2.5em; }
-  section.about-us h3 + p {
-    font-size: 1.685em; }
 
 @media screen and (min-width: 1200px) {
   .mdl-cell.carrers {
@@ -100,5 +99,47 @@ section.about-us {
   .job-position-description {
     border-bottom: 1px solid #fff;
     padding-bottom: 1.5em; } }
+
+/* Styling Content Block: How it works */
+section.how-it-works {
+  background: transparent url("assets/secondary-bg-how-works.png") left top no-repeat; }
+
+/* Styling Content Block: Contact us */
+section.contact-us button.mdl-button {
+  font-size: 1.2em;
+  height: 4em;
+  width: 14em; }
+
+/* Styling Block: Footer */
+footer * {
+  color: #fff; }
+footer h3 {
+  text-align: center; }
+  footer h3 span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: normal; }
+footer ul, footer li {
+  list-style: outside none none; }
+footer a {
+  text-decoration: none; }
+footer a.light-blue {
+  color: #32AAE4;
+  font-weight: bold; }
+@media screen and (min-width: 1200px) {
+  footer div.navigation-block {
+    border-right: 1px solid #32AAE4; } }
+footer div.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+footer a.functional-image-onyo-logo {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center; }
+  footer a.functional-image-onyo-logo img {
+    height: 32px;
+    width: 93px; }
 
 /*# sourceMappingURL=main.css.map */

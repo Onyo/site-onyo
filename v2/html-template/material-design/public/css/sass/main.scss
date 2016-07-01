@@ -4,6 +4,7 @@ $break-large: 1200px;
 
 /* Main Setting */
 $mainBlue: #2F4472;
+$lightBlue: #32AAE4;
 
 
 /* Styling */
@@ -16,16 +17,11 @@ main {
 	}
 }
 
-.user-input {
-	border: 1px solid $mainBlue;
-	background-color: #fff;
-	padding: 0.635em;
-}
-
 /* Start section styling */
 .section-header {
-	padding-top: 1.5em;
+	padding: 1.5em 0 1em 0;
 	text-align: center;
+	margin: 0 0 1em 0;
 	span {
 		font-weight: bold;
 	}
@@ -50,30 +46,32 @@ section {
 	p {
 		@extend .section-main-message;
 	}
+	a.mdl-button--colored  {
+	    font-size: 1.2em;
+	    padding: 0.5em 2em;
+	}
 }
 
 section.even {
+	.section-header {
+		background: transparent url("assets/section-header-separator-even.gif") bottom center no-repeat;
+	}
 	h2, h3, p {
 		color: $mainBlue;
 	}
 }
 
 section.odd {
+	.section-header {
+		background: transparent url("assets/section-header-separator-odd.gif") bottom center no-repeat;
+	}
 	h2, h3, p {
 		color: #fff;
 	}
 }
 /* End section styling */
 
-form {
-	label {
-		display:block;
-	}
-	input[type=text] ,input[type=email] ,input[type=password] ,textarea {
-		@extend .user-input;
-		width: 90%;
-	}
-}
+
 footer.mdl-mega-footer {
 	background-color: $mainBlue;
 }
@@ -122,10 +120,6 @@ footer.mdl-mega-footer {
 .secondary-bg {
 	min-height: 68.188em;
 	object-fit: contain;
-} 
-
-section.about-us {
-	background: transparent url("assets/secondary-bg-about-us.png") left top no-repeat;
 
 	h3 {
 		font-size: 2.5em;
@@ -134,6 +128,10 @@ section.about-us {
 	h3 + p {
 		font-size: 1.685em;
 	}
+} 
+
+section.about-us {
+	background: transparent url("assets/secondary-bg-about-us.png") left top no-repeat;
 }
 
 .mdl-cell.carrers {
@@ -157,5 +155,70 @@ section.about-us {
 	@media screen and (max-width: $break-small) {
 		border-bottom: 1px solid #fff;
 		padding-bottom: 1.5em;
+	}
+}
+
+/* Styling Content Block: How it works */
+section.how-it-works {
+	background: transparent url("assets/secondary-bg-how-works.png") left top no-repeat;
+}
+/* Styling Content Block: Contact us */
+section.contact-us {
+	button.mdl-button{
+		font-size:1.2em;
+		height: 4em;
+		width:14em;
+	}
+}
+/* Styling Block: Footer */
+footer {
+	* {
+		color: #fff;
+	}
+
+	h3 {
+		text-align: center;
+		span {
+		    display: block;
+		    font-size: 0.5em;
+		    font-weight: normal;
+		}
+	}
+
+	ul, li {
+		list-style: outside none none;
+	}
+
+	a {
+		text-decoration:none;
+	}
+
+	a.light-blue {
+		color: $lightBlue;
+		font-weight: bold;
+	}
+
+	div.navigation-block {
+		@media screen and (min-width: $break-large) {
+			border-right: 1px solid $lightBlue;
+		}
+	}
+
+	div.contact {
+	    display: flex;
+	    justify-content: center;
+  		align-items: center;
+	}
+
+	a.functional-image-onyo-logo {
+	    display: flex;
+	    height:100%;
+	    justify-content: center;
+  		align-items: center;	    
+
+	    img {
+	    	height:32px;
+	    	width:93px;
+	    }
 	}
 }

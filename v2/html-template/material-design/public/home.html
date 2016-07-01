@@ -51,7 +51,7 @@
 		 		</div>
 		 	</div>
 
-			<section>
+			<section class="secondary-bg what-is even">
 				<h2><span>What</span> is it?</h2>
 				<div class="mdl-grid">
 					<div class="md-cell mdl-cell--2-col-desktop">
@@ -72,8 +72,29 @@
 				</div>
 			</section>
 
-			<section>
-				<h2><span>How</span> does it works?</h2>
+			<section class="secondary-bg how-it-works odd">
+				<h2><span>How</span> it works?</h2>
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--7-col-desktop">
+						<p>Bla</p>
+					</div>
+					<div class="mdl-cell mdl-cell--5-col-desktop">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lorem nibh,</h3>
+						<p>Dignissim sit amet odio ut, ullamcorper dignissim magna. Sed maximus elit odio, eu placerat risus venenatis non. Sed tincidunt sollicitudin dui, interdum pretium nunc. Duis a faucib</p>
+						<div class="mdl-grid">
+							<div class="mdl-cell mdl-cell--6-col-desktop">
+								<a href="#">
+									<img src="css/assets/btn-app-store.png" alt="Download the app">
+								</a>
+							</div>
+							<div class="mdl-cell mdl-cell--6-col-desktop">
+								<a href="#">
+									<img src="css/assets/btn-play-store.png" alt="Download the app">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			
 			<section class="secondary-bg about-us odd">
@@ -82,6 +103,7 @@
 					<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-desktop mdl-cell--2-offset-desktop">
 						<h3>We work as a team, valuing all individual contributions.</h3>
 						<p>We are humble and determined, specially after experiencing success.</p>
+						<a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">MEET OUR TEAM</a>
 					</div>
 					<div class="mdl-cell mdl-cell--6-col carrers">
 						<h3>Carrers</h3>
@@ -109,35 +131,34 @@
 								<p>Full time Allows <br />Remote</p>
 							</div>
 						</div>
+						<a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">join our team</a>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section class="secondary-bg contact-us even">
 				<h2><span>Contact</span> us</h2>
 				<form>
 					<div class="mdl-grid">
 						<div class="mdl-cell mdl-cell--6-col">
-							<label>
-								Name:<br />
-								<input type="text" name="name">
-							</label>
-							<label>
-								E-mail:<br />
-								<input type="email" name="email">
-							</label>
+							  <div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="text" id="name">
+							    <label class="mdl-textfield__label" for="name">Name</label>
+							  </div>
+							  <div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="email" id="email">
+							    <label class="mdl-textfield__label" for="email">E-mail</label>
+							  </div>
 						</div>
 						<div class="mdl-cell mdl-cell--6-col">
-							<label>
-								Message:<br />
-								<textarea>
-									Leave ur message here ...
-								</textarea>
-							</label>
+							  <div class="mdl-textfield mdl-js-textfield">
+							    <textarea class="mdl-textfield__input" type="text" rows= "4" id="message" ></textarea>
+							    <label class="mdl-textfield__label" for="message">Message</label>
+							  </div>
 						</div>
 					</div>
 					<div class="mdl-grid">
-						<div class="mdl-cell mdl-cell--12-col">
+						<div class="mdl-cell mdl-cell--12-col mdl-cell--4-offset-desktop">
 							<button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
 							  Send
 							</button>
@@ -150,26 +171,34 @@
 			<div class="mdl-mega-footer__middle-section">
 				<div class="mdl-grid">
 					<div class="mdl-cell mdl-cell--2-col-desktop">
-						<h3>Onyo</h3>
+						<a class="functional-image-onyo-logo" href="#">
+  							<img src="css/assets/footer-logo-onyo.png" alt="Onyo home">
+						</a>
 					</div>
-					<div class="mdl-cell mdl-cell--2-col-desktop">
+					<div class="mdl-cell mdl-cell--3-col-desktop navigation-block">
 				      	<nav class="mdl-navigation">
-				      		<ul>
-					        	<li><a class="mdl-navigation__link" title="About" href="">About</a></li>
-					        	<li><a class="mdl-navigation__link" title="Help" href="">Help</a></li>
-					        	<li><a class="mdl-navigation__link" title="Carrers" href="">Carrers</a></li>
-					        	<li><a class="mdl-navigation__link" title="For restaurants" href="">For restaurants</a></li>
+				      		<ul>  
+					        	<li><a class="light-blue" title="FOR RESTAURANTS" href="">FOR RESTAURANTS</a></li>
+					        	<li><a title="ABOUT" href="">ABOUT</a></li>
+					        	<li><a title="CAREERS" href="">CAREERS</a></li>
+					        	<li><a title="PRESS" href="">PRESS</a></li>
+					        	<li><a title="BLOG" href="">BLOG</a></li>
+					        	<li><a title="HELP" href="">HELP</a></li>
+					        	<li><a title="USABILITY" href="">USABILITY</a></li>
+					        	<li><a title="GUIDELINES" href="">GUIDELINES</a></li>
+					        	<li><a title="PRIVACY" href="">PRIVACY</a></li>
+					        	<li><a title="GUIDELINES" href="">GUIDELINES</a></li>
 				      		</ul>
 				      	</nav>
 					</div>
-					<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--2-offset-desktop">
-						<h3>NY</h3>
+					<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--1-offset-desktop contact">
+						<h3>NY <span>+1 (408) 890-2102</span></h3>
 					</div>
-					<div class="mdl-cell mdl-cell--2-col-desktop">
-						<h3>RJ</h3>
+					<div class="mdl-cell mdl-cell--2-col-desktop contact">
+						<h3>RJ <span>+55 (21) 3942-2102</span></h3>
 					</div>
-					<div class="mdl-cell mdl-cell--2-col-desktop">
-						<h3>SP</h3>
+					<div class="mdl-cell mdl-cell--2-col-desktop contact">
+						<h3>SP <span>+55 (21) 3942-2102</span></h3>
 					</div>
 				</div>
 			</div>
