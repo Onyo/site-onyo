@@ -85,28 +85,45 @@ footer.mdl-mega-footer {
 	background: transparent url("assets/main-bg-home.png") top center no-repeat;
 }
 
-.main-text-banner {
-	margin-top: 5em;
-	min-height: 23em;
-
-	p {
-		background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
-		padding-bottom: 1em;
-	}
-}
-
 .main-text-banner, .main-text-banner * {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1em;
+	color: #fff;
 
 	.main-message {
-		font-size: 1.800em;
+		font-size: 1.5em;
 		line-height: 1em;
 		display: block;
 	}
-	
-	text-align: center;
-	font-size: 1.865em;
-	line-height: 1em;
-	color: #fff;
+}
+
+.main-text-banner {
+    margin-top: 2em;
+    min-height: 6em;
+
+    p {
+		background-image: none;
+		padding-bottom: 0.5em;
+    }
+}
+
+.home-content {
+	.main-text-banner {
+		margin-top: 5em;
+		min-height: 23em;
+
+		p {
+			background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
+			padding-bottom: 1em;
+		}
+	}
+
+	.main-text-banner, .main-text-banner * {
+		.main-message {
+			font-size: 1.800em;
+		}
+	}	
 }
 
 /* Styling Content Block: What is it */
@@ -223,4 +240,5 @@ footer {
 	}
 }
 
-@import 'about'
+@import 'about';
+@import 'contactus';

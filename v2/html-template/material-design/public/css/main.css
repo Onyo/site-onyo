@@ -47,22 +47,31 @@ footer.mdl-mega-footer {
 .main-home-bg {
   background: transparent url("assets/main-bg-home.png") top center no-repeat; }
 
-.main-text-banner {
-  margin-top: 5em;
-  min-height: 23em; }
-  .main-text-banner p {
-    background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
-    padding-bottom: 1em; }
-
 .main-text-banner, .main-text-banner * {
   text-align: center;
-  font-size: 1.865em;
+  font-size: 1.5em;
   line-height: 1em;
   color: #fff; }
   .main-text-banner .main-message, .main-text-banner * .main-message {
-    font-size: 1.800em;
+    font-size: 1.5em;
     line-height: 1em;
     display: block; }
+
+.main-text-banner {
+  margin-top: 2em;
+  min-height: 6em; }
+  .main-text-banner p {
+    background-image: none;
+    padding-bottom: 0.5em; }
+
+.home-content .main-text-banner {
+  margin-top: 5em;
+  min-height: 23em; }
+  .home-content .main-text-banner p {
+    background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
+    padding-bottom: 1em; }
+.home-content .main-text-banner .main-message, .home-content .main-text-banner * .main-message {
+  font-size: 1.800em; }
 
 /* Styling Content Block: What is it */
 .what-is-it-block {
@@ -142,14 +151,6 @@ footer a.functional-image-onyo-logo {
     height: 32px;
     width: 93px; }
 
-.about-content .main-text-banner, .about-content .main-text-banner * {
-  font-size: 1.5em; }
-.about-content .main-text-banner {
-  margin-top: 2em;
-  min-height: 6em; }
-.about-content .main-text-banner p {
-  background-image: none;
-  padding-bottom: 0.5em; }
 .about-content .team-picture-holder img {
   height: 30.143em;
   width: 38.786em; }
@@ -169,5 +170,17 @@ footer a.functional-image-onyo-logo {
       padding: 0 0 0.3em 0; }
   .about-content section.onyo-leaders .mdl-grid > .mdl-cell {
     text-align: center; }
+
+.contact-us-wrapper {
+  background-color: #fff;
+  color: #2F4472; }
+  .contact-us-wrapper .contact h3 {
+    text-align: center; }
+    .contact-us-wrapper .contact h3 span {
+      display: block;
+      font-size: 0.465em; }
+
+.contactuc-content + footer {
+  margin-top: -8px; }
 
 /*# sourceMappingURL=main.css.map */

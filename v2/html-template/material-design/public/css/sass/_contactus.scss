@@ -1,0 +1,19 @@
+.contact-us-wrapper {
+	background-color: #fff;
+	color: $mainBlue;
+
+	.contact {
+		h3 {
+			text-align:center;
+			
+			span {
+				display:block;
+				font-size:0.465em;
+			}
+		}
+	}
+}
+
+.contactuc-content + footer {
+	margin-top: -8px;
+}
