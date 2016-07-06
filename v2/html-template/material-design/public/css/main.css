@@ -142,4 +142,32 @@ footer a.functional-image-onyo-logo {
     height: 32px;
     width: 93px; }
 
+.about-content .main-text-banner, .about-content .main-text-banner * {
+  font-size: 1.5em; }
+.about-content .main-text-banner {
+  margin-top: 2em;
+  min-height: 6em; }
+.about-content .main-text-banner p {
+  background-image: none;
+  padding-bottom: 0.5em; }
+.about-content .team-picture-holder img {
+  height: 30.143em;
+  width: 38.786em; }
+.about-content section.even {
+  background-color: #fff; }
+.about-content section.onyo-leaders {
+  background: transparent url(assets/about/secondary-bg-about-page-team-leaders.png) left top no-repeat;
+  object-fit: contain; }
+  .about-content section.onyo-leaders h4 {
+    font-size: 1.2em;
+    font-weight: bold; }
+  .about-content section.onyo-leaders ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .about-content section.onyo-leaders ul li {
+      padding: 0 0 0.3em 0; }
+  .about-content section.onyo-leaders .mdl-grid > .mdl-cell {
+    text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
