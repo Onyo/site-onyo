@@ -179,8 +179,38 @@ footer a.functional-image-onyo-logo {
     .contact-us-wrapper .contact h3 span {
       display: block;
       font-size: 0.465em; }
+  .contact-us-wrapper form .mdl-textfield {
+    width: 28em; }
+  .contact-us-wrapper form button {
+    display: block;
+    font-size: 1.285em;
+    font-weight: bold;
+    height: 3.865em;
+    margin: 0 auto;
+    padding: 0.8em 0;
+    width: 16em; }
+  .contact-us-wrapper .mdl-cell:nth-child(2) p {
+    text-align: center;
+    font-size: 2em;
+    padding: 0 2em;
+    line-height: 1.6em; }
+  .contact-us-wrapper .mdl-cell:nth-child(2) a {
+    background-color: #32AAE4;
+    display: block;
+    margin: 0 auto;
+    padding: 0.8em 0;
+    width: 16em;
+    font-size: 1.285em;
+    font-weight: bold; }
 
 .contactuc-content + footer {
   margin-top: -8px; }
+
+@media screen and (min-width: 1200px) {
+  .contact-us-wrapper {
+    padding-bottom: 5em; }
+    .contact-us-wrapper form {
+      margin-right: 1em;
+      border-right: 0.063em solid #2F4472; } }
 
 /*# sourceMappingURL=main.css.map */

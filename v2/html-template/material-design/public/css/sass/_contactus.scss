@@ -5,15 +5,60 @@
 	.contact {
 		h3 {
 			text-align:center;
-			
+
 			span {
 				display:block;
 				font-size:0.465em;
 			}
 		}
 	}
+
+	form {
+		.mdl-textfield {
+			width: 28em;
+		}
+
+		button {
+		    display: block;
+		    font-size: 1.285em;
+		    font-weight: bold;
+		    height: 3.865em;
+		    margin: 0 auto;
+		    padding: 0.8em 0;
+		    width: 16em;
+		}
+	}
+
+	.mdl-cell:nth-child(2) {
+		p {
+			text-align: center;
+			font-size: 2em;
+			padding: 0 2em;
+			line-height: 1.6em;
+		}
+
+		a {
+			background-color: $lightBlue;
+		    display: block;
+		    margin: 0 auto;
+		    padding: 0.8em 0;
+		    width: 16em;
+    		font-size: 1.285em;
+    		font-weight: bold;
+		}
+	}
 }
 
 .contactuc-content + footer {
 	margin-top: -8px;
+}
+
+@media screen and (min-width: $break-large) {
+	.contact-us-wrapper {
+		padding-bottom: 5em;
+		form {
+			margin-right: 1em;
+			border-right:0.063em solid $mainBlue;
+		}
+	}
 }
