@@ -26,10 +26,12 @@ section a.mdl-button--colored {
   font-size: 1.2em;
   padding: 0.5em 2em; }
 
-section.even .section-header, section.even h2 {
-  background: transparent url("assets/section-header-separator-even.gif") bottom center no-repeat; }
-section.even h2, section.even h3, section.even p {
-  color: #2F4472; }
+section.even {
+  background-color: #fff; }
+  section.even .section-header, section.even h2 {
+    background: transparent url("assets/section-header-separator-even.gif") bottom center no-repeat; }
+  section.even h2, section.even h3, section.even p {
+    color: #2F4472; }
 
 section.odd .section-header, section.odd h2 {
   background: transparent url("assets/section-header-separator-odd.gif") bottom center no-repeat; }
@@ -66,12 +68,16 @@ footer.mdl-mega-footer {
 
 .home-content .main-text-banner {
   margin-top: 5em;
-  min-height: 23em; }
+  min-height: 22em; }
   .home-content .main-text-banner p {
     background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
-    padding-bottom: 1em; }
+    padding-bottom: 2em;
+    line-height: 2em; }
 .home-content .main-text-banner .main-message, .home-content .main-text-banner * .main-message {
   font-size: 1.800em; }
+@media screen and (min-width: 1200px) {
+  .home-content .main-text-banner .main-message, .home-content .main-text-banner * .main-message {
+    font-size: 2.800em; } }
 
 /* Styling Content Block: What is it */
 .what-is-it-block {
@@ -208,7 +214,7 @@ footer a.functional-image-onyo-logo {
 
 @media screen and (min-width: 1200px) {
   .contact-us-wrapper {
-    padding-bottom: 5em; }
+    padding: 8em 0; }
     .contact-us-wrapper form {
       margin-right: 1em;
       border-right: 0.063em solid #2F4472; } }

@@ -53,6 +53,7 @@ section {
 }
 
 section.even {
+	background-color:#fff;
 	.section-header {
 		background: transparent url("assets/section-header-separator-even.gif") bottom center no-repeat;
 	}
@@ -111,17 +112,24 @@ footer.mdl-mega-footer {
 .home-content {
 	.main-text-banner {
 		margin-top: 5em;
-		min-height: 23em;
+		min-height: 22em;
 
 		p {
 			background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
-			padding-bottom: 1em;
+			padding-bottom: 2em;
+			line-height:2em;
 		}
 	}
 
 	.main-text-banner, .main-text-banner * {
 		.main-message {
 			font-size: 1.800em;
+		}
+
+		@media screen and (min-width: $break-large) {
+			.main-message {
+				font-size: 2.800em;
+			}
 		}
 	}	
 }
