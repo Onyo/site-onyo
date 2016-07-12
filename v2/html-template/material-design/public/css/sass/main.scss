@@ -1,4 +1,4 @@
-/* Responsive settings */
+/* Basic Responsive settings */
 $break-small: 320px;
 $break-large: 1200px;
 
@@ -37,6 +37,7 @@ main {
 }
 
 section {
+	background-size: cover;
 	h2 {
 		@extend .section-header;
 	}
@@ -156,7 +157,7 @@ footer.mdl-mega-footer {
 } 
 
 section.about-us {
-	background: transparent url("assets/secondary-bg-about-us.png") left top no-repeat;
+	background: transparent url("assets/secondary-bg-about-us.png") left top / cover no-repeat;
 }
 
 .mdl-cell.carrers {
@@ -185,7 +186,7 @@ section.about-us {
 
 /* Styling Content Block: How it works */
 section.how-it-works {
-	background: transparent url("assets/secondary-bg-how-works.png") left top no-repeat;
+	background: transparent url("assets/secondary-bg-how-works.png") left top / cover no-repeat;
 }
 /* Styling Content Block: Contact us */
 section.contact-us {
@@ -250,3 +251,5 @@ footer {
 
 @import 'about';
 @import 'contactus';
+@import 'restaurants';
+@import 'onyo.bxslider';

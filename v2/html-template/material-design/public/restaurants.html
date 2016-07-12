@@ -8,16 +8,17 @@
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
+<body class="restaurants-content">
 
 	<div class="main-bg main-home-bg mdl-js-layout mdl-layout--no-desktop-drawer-button">
+		<!-- INIT WEBSITE MAIN MENU -->
 		<header class="mdl-layout__header mdl-layout__header--transparent">
 		    <div class="mdl-layout__header-row">
 		      <!-- Title -->
 		      <span class="mdl-layout-title">
 		      		<!-- functional image -->
 		      		<a href="#">
-  						<img src="css/assets/main-logo-onyo.png" alt="Onyo home">
+						<img src="css/assets/main-logo-onyo.png" alt="Onyo home">
 					</a>
 		      </span>
 		      <!-- Add spacer, to align navigation to the right -->
@@ -39,41 +40,40 @@
 	        	<a class="mdl-navigation__link" title="Carrers" href="">Carrers</a>
 	        	<a class="mdl-navigation__link" title="For restaurants" href="">For restaurants</a>
 	      	</nav>
-		 </div>
-		 <main class="mdl-layout__content home-content">
-
-		 	<!-- main text banner -->
+		</div>
+		<!-- END WEBSITE MAIN MENU -->
+		<!-- INIT WEBSITE CONTENT -->
+		<main class="mdl-layout__content">
+		<!-- INIT RESTAURANTS CONTENT -->
 		 	<div class="mdl-grid">
-		 		<div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--2-offset-desktop">
-		 			<div class="main-text-banner">
-		 				<p><span class="main-message">In your hands, the abosulte power</span> of choice of what and when to eat in a crowded food court</p>
+		 		<div class="mdl-cell mdl-cell--8-col-desktop mdl-cell--2-offset-desktop mdl-cell--12-col">
+		 			<div class="main-text-banner internal-page-banner">
+		 				<p><span class="main-message">Step into a new paradigm</span> Customers’ experiences at food courts will never be the same</p>
 		 			</div>
 		 		</div>
 		 	</div>
-
-			<section class="secondary-bg what-is even">
-				<h2><span>What</span> is it?</h2>
+			<section class="company-purpose even">
+				<h2><span>Company</span> purpose</h2>
 				<div class="mdl-grid">
-					<div class="md-cell mdl-cell--2-col-desktop">
-						<p class="what-is-it-block">You need an escape from everyday routine. </p>
+					<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--4-col-tablet mdl-cell--4-col">
+						<div class="bubble">
+							<div class="round-message"><p><span>Put in our customers’ hands the absolute power of choice of what and when to eat in a crowded food court: get there and pick the meal right away</span></p></div>
+						</div>
 					</div>
-					<div class="md-cell mdl-cell--3-col-desktop">
-						<p class="what-is-it-block">But you have no choice, you’ve got to grab lunch at the nearest food court. Your lunch time is everyone else’s lunch time, and the court is crowded. </p>
+					<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--4-col-tablet mdl-cell--4-col">
+						<div class="bubble">
+							<div class="round-message"><p><span>Provide foodservice chains with unique and personalized access to a vast number of recurring customers</span></p></div>
+						</div>
 					</div>
-					<div class="md-cell mdl-cell--2-col-desktop">
-						<p class="what-is-it-block">With Onyo, decide what you want to eat and when.</p>
-					</div>
-					<div class="md-cell mdl-cell--3-col-desktop">
-						<p class="what-is-it-block">Discover what’s recommended for you, search, order ahead and pay – all before getting to the food court.</p>
-					</div>
-					<div class="md-cell mdl-cell--2-col-desktop">
-						<p class="what-is-it-block">Reinvent your lunch time. The power of choice is only yours. </p>
+					<div class="mdl-cell mdl-cell--12-col-phone mdl-cell--12-col-tablet mdl-cell--4-col">
+						<div class="bubble">
+							<div class="round-message"><p><span>Build the marketplace to make the connection</span></p></div>
+						</div>
 					</div>
 				</div>
 			</section>
-
-			<section class="secondary-bg how-it-works odd">
-				<h2><span>How</span> it works?</h2>
+			<section class="how-it-works odd">
+				<h2><span>How</span> it works</h2>
 				<div class="mdl-grid">
 					<div class="mdl-cell mdl-cell--7-col-desktop">
 						<p>Carousel</p>
@@ -96,9 +96,38 @@
 					</div>
 				</div>
 			</section>
-			
-			<section class="secondary-bg about-us odd">
-				<h2>About <span>us</span></h2>
+			<section class="contact-us odd">
+				<h2><span>Contact us</span> To know more about our solutions</h2>
+				<form>
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--6-col">
+							  <div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="text" id="name">
+							    <label class="mdl-textfield__label" for="name">Name</label>
+							  </div>
+							  <div class="mdl-textfield mdl-js-textfield">
+							    <input class="mdl-textfield__input" type="email" id="email">
+							    <label class="mdl-textfield__label" for="email">E-mail</label>
+							  </div>
+						</div>
+						<div class="mdl-cell mdl-cell--6-col">
+							  <div class="mdl-textfield mdl-js-textfield">
+							    <textarea class="mdl-textfield__input" type="text" rows= "4" id="message" ></textarea>
+							    <label class="mdl-textfield__label" for="message">Message</label>
+							  </div>
+						</div>
+					</div>
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--12-col mdl-cell--4-offset-desktop">
+							<button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
+							  Send
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="about-us odd">
+				<h2>About <span>Us</span></h2>
 				<div class="mdl-grid">
 					<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-desktop mdl-cell--2-offset-desktop">
 						<h3>We work as a team, valuing all individual contributions.</h3>
@@ -135,38 +164,10 @@
 					</div>
 				</div>
 			</section>
-
-			<section class="secondary-bg contact-us even">
-				<h2><span>Contact</span> us</h2>
-				<form>
-					<div class="mdl-grid">
-						<div class="mdl-cell mdl-cell--6-col">
-							  <div class="mdl-textfield mdl-js-textfield">
-							    <input class="mdl-textfield__input" type="text" id="name">
-							    <label class="mdl-textfield__label" for="name">Name</label>
-							  </div>
-							  <div class="mdl-textfield mdl-js-textfield">
-							    <input class="mdl-textfield__input" type="email" id="email">
-							    <label class="mdl-textfield__label" for="email">E-mail</label>
-							  </div>
-						</div>
-						<div class="mdl-cell mdl-cell--6-col">
-							  <div class="mdl-textfield mdl-js-textfield">
-							    <textarea class="mdl-textfield__input" type="text" rows= "4" id="message" ></textarea>
-							    <label class="mdl-textfield__label" for="message">Message</label>
-							  </div>
-						</div>
-					</div>
-					<div class="mdl-grid">
-						<div class="mdl-cell mdl-cell--12-col mdl-cell--4-offset-desktop">
-							<button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect">
-							  Send
-							</button>
-						</div>
-					</div>
-				</form>
-			</section>
-  		 </main>
+		<!-- END RESTAURANTS CONTENT -->
+		</main>
+		<!-- END WEBSITE CONTENT -->
+		<!-- INIT WEBSITE FOOTER -->
 		<footer class="mdl-mega-footer">
 			<div class="mdl-mega-footer__middle-section">
 				<div class="mdl-grid">
@@ -203,8 +204,12 @@
 				</div>
 			</div>
 		</footer>
-	</div><!-- END LAYOUT -->
+		<!-- END WEBSITE FOOTER -->
+	</div>
 	<script src="lib/material-design-lite/material.min.js"></script>
+
+	<!-- JQUERY SLIDER -->
 	<script src="lib/jquery/jquery.js"></script>
+	<script type="text/javascript" src="lib/onyo/horizontal-slider/script.js"></script>
 </body>
 </html>

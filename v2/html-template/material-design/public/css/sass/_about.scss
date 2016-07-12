@@ -11,7 +11,7 @@
 	}
 
 	section.onyo-leaders {
-		background: transparent url(assets/about/secondary-bg-about-page-team-leaders.png) left top no-repeat;
+		background: transparent url(assets/about/secondary-bg-about-page-team-leaders.png) left top / cover no-repeat;
 		object-fit: contain;
 
 		h4 {
@@ -32,5 +32,25 @@
 		.mdl-grid > .mdl-cell {
 			text-align: center;
 		}
+	}
+
+	section.join-us {
+		background: transparent url(assets/about/join-us.png) left top / cover no-repeat;
+	}
+}
+
+form.onyo-form {
+	.mdl-textfield {
+		width: 100%;
+	}
+
+	button {
+	    display: block;
+	    font-size: 1.285em;
+	    font-weight: bold;
+	    height: 3.865em;
+	    margin: 0 auto;
+	    padding: 0.8em 0;
+	    width: 16em;
 	}
 }

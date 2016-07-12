@@ -1,0 +1,13 @@
+.onyo-slider {
+	border: 2px solid #000;
+
+	.onyo-slider-wrapper {
+		display: flex;
+
+		overflow-x:auto; 
+
+		>div {
+			flex: 0 0 auto;
+		}
+	}
+}
