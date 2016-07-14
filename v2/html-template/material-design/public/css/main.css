@@ -120,6 +120,33 @@ section.about-us {
 /* Styling Content Block: How it works */
 section.how-it-works {
   background: transparent url("assets/secondary-bg-how-works.png") left top/cover no-repeat; }
+  section.how-it-works .mobile-screens-samples-wrapper {
+    position: relative;
+    height: 38em; }
+    @media screen and (min-width: 1200px) {
+      section.how-it-works .mobile-screens-samples-wrapper {
+        max-width: 50em;
+        margin: 0 auto; } }
+    @media screen and (max-width: 320px) {
+      section.how-it-works .mobile-screens-samples-wrapper {
+        height: 22em; } }
+    section.how-it-works .mobile-screens-samples-wrapper img {
+      position: absolute;
+      top: 0;
+      opacity: 0.8; }
+      @media screen and (max-width: 320px) {
+        section.how-it-works .mobile-screens-samples-wrapper img {
+          height: 22em; } }
+    section.how-it-works .mobile-screens-samples-wrapper img:first-child + img {
+      z-index: 9;
+      left: 50%;
+      margin-left: -10em;
+      opacity: 1; }
+      @media screen and (max-width: 320px) {
+        section.how-it-works .mobile-screens-samples-wrapper img:first-child + img {
+          margin-left: -5em; } }
+    section.how-it-works .mobile-screens-samples-wrapper img:last-child {
+      right: 0; }
 
 /* Styling Content Block: Contact us */
 section.contact-us button.mdl-button {
@@ -233,27 +260,27 @@ form.onyo-form button {
     .contact-us-wrapper form {
       margin-right: 1em;
       border-right: 0.063em solid #2F4472; } }
-.restaurants-content .main-home-bg {
+.restaurants-content .main-home-bg, .page-template-page-restaurants .main-home-bg {
   background: transparent url(assets/restaurants/main-bg-restaurants.png) left top/cover; }
-.restaurants-content .main-text-banner {
+.restaurants-content .main-text-banner, .page-template-page-restaurants .main-text-banner {
   margin-top: 5em;
   min-height: 22em; }
-  .restaurants-content .main-text-banner p {
+  .restaurants-content .main-text-banner p, .page-template-page-restaurants .main-text-banner p {
     background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
     padding-bottom: 2em;
     line-height: 2em; }
-.restaurants-content .main-text-banner .main-message, .restaurants-content .main-text-banner * .main-message {
+.restaurants-content .main-text-banner .main-message, .restaurants-content .main-text-banner * .main-message, .page-template-page-restaurants .main-text-banner .main-message, .page-template-page-restaurants .main-text-banner * .main-message {
   font-size: 1.800em; }
 @media screen and (min-width: 1200px) {
-  .restaurants-content .main-text-banner .main-message, .restaurants-content .main-text-banner * .main-message {
+  .restaurants-content .main-text-banner .main-message, .restaurants-content .main-text-banner * .main-message, .page-template-page-restaurants .main-text-banner .main-message, .page-template-page-restaurants .main-text-banner * .main-message {
     font-size: 2.800em; } }
-.restaurants-content .how-it-works {
+.restaurants-content .how-it-works, .page-template-page-restaurants .how-it-works {
   background: transparent url(assets/restaurants/secondary-bg-how-it-works.png) left top/cover no-repeat; }
-.restaurants-content .contact-us {
+.restaurants-content .contact-us, .page-template-page-restaurants .contact-us {
   background-color: #3face4; }
-  .restaurants-content .contact-us h2 > span {
+  .restaurants-content .contact-us h2 > span, .page-template-page-restaurants .contact-us h2 > span {
     display: block; }
-  .restaurants-content .contact-us .mdl-textfield__input {
+  .restaurants-content .contact-us .mdl-textfield__input, .page-template-page-restaurants .contact-us .mdl-textfield__input {
     border-color: -moz-use-text-color -moz-use-text-color rgba(255, 255, 255, 0.33); }
 
 .bubble {

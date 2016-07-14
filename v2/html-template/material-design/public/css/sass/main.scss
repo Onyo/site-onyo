@@ -187,6 +187,48 @@ section.about-us {
 /* Styling Content Block: How it works */
 section.how-it-works {
 	background: transparent url("assets/secondary-bg-how-works.png") left top / cover no-repeat;
+
+	.mobile-screens-samples-wrapper {
+		position: relative;
+		height: 38em;
+
+		@media screen and (min-width: $break-large) {
+			max-width: 50em;
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width: $break-small) {
+			height: 22em;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+
+			@media screen and (max-width: $break-small) {
+				height: 22em;
+			}
+
+			opacity: 0.8;
+		}
+
+		img:first-child + img {
+			z-index:9;	
+
+			left: 50%;
+			margin-left: -10em;	
+
+			opacity: 1;
+
+			@media screen and (max-width: $break-small) {
+				margin-left:-5em;
+			}
+		}
+
+		img:last-child {
+			right: 0;
+		}
+	}
 }
 /* Styling Content Block: Contact us */
 section.contact-us {
