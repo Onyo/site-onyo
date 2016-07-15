@@ -131,12 +131,12 @@ footer.mdl-mega-footer {
 	background-color: $mainBlue;
 }
 
-.main-bg.main-home-bg {
+.main-bg.main-home-bg , body.home .main-home-bg {
   height: 813px;
   object-fit: contain;
 }
 
-.main-home-bg {
+.main-home-bg, body.home .main-home-bg {
 	background: transparent url("assets/main-bg-home.png") top center no-repeat;
 }
 
@@ -163,7 +163,7 @@ footer.mdl-mega-footer {
     }
 }
 
-.home-content {
+.home-content, body.home {
 	.main-text-banner {
 		margin-top: 5em;
 		min-height: 22em;
@@ -374,3 +374,5 @@ footer {
 @import 'contactus';
 @import 'restaurants';
 @import 'onyo.bxslider';
+@import 'blog';
+@import 'press';

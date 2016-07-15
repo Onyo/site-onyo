@@ -84,11 +84,11 @@ section.odd h2, section.odd h3, section.odd p {
 footer.mdl-mega-footer {
   background-color: #2F4472; }
 
-.main-bg.main-home-bg {
+.main-bg.main-home-bg, body.home .main-home-bg {
   height: 813px;
   object-fit: contain; }
 
-.main-home-bg {
+.main-home-bg, body.home .main-home-bg {
   background: transparent url("assets/main-bg-home.png") top center no-repeat; }
 
 .main-text-banner, .main-text-banner * {
@@ -108,17 +108,17 @@ footer.mdl-mega-footer {
     background-image: none;
     padding-bottom: 0.5em; }
 
-.home-content .main-text-banner {
+.home-content .main-text-banner, body.home .main-text-banner {
   margin-top: 5em;
   min-height: 22em; }
-  .home-content .main-text-banner p {
+  .home-content .main-text-banner p, body.home .main-text-banner p {
     background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
     padding-bottom: 2em;
     line-height: 2em; }
-.home-content .main-text-banner .main-message, .home-content .main-text-banner * .main-message {
+.home-content .main-text-banner .main-message, .home-content .main-text-banner * .main-message, body.home .main-text-banner .main-message, body.home .main-text-banner * .main-message {
   font-size: 1.800em; }
 @media screen and (min-width: 1200px) {
-  .home-content .main-text-banner .main-message, .home-content .main-text-banner * .main-message {
+  .home-content .main-text-banner .main-message, .home-content .main-text-banner * .main-message, body.home .main-text-banner .main-message, body.home .main-text-banner * .main-message {
     font-size: 2.800em; } }
 
 /* Styling Content Block: What is it */
@@ -244,26 +244,26 @@ footer a.functional-image-onyo-logo {
     height: 32px;
     width: 93px; }
 
-.about-content .team-picture-holder img {
+.about-content .team-picture-holder img, .page-template-page-aboutus .team-picture-holder img {
   height: 30.143em;
   width: 38.786em; }
-.about-content section.even {
+.about-content section.even, .page-template-page-aboutus section.even {
   background-color: #fff; }
-.about-content section.onyo-leaders {
+.about-content section.onyo-leaders, .page-template-page-aboutus section.onyo-leaders {
   background: transparent url(assets/about/secondary-bg-about-page-team-leaders.png) left top/cover no-repeat;
   object-fit: contain; }
-  .about-content section.onyo-leaders h4 {
+  .about-content section.onyo-leaders h4, .page-template-page-aboutus section.onyo-leaders h4 {
     font-size: 1.2em;
     font-weight: bold; }
-  .about-content section.onyo-leaders ul {
+  .about-content section.onyo-leaders ul, .page-template-page-aboutus section.onyo-leaders ul {
     list-style: none;
     padding: 0;
     margin: 0; }
-    .about-content section.onyo-leaders ul li {
+    .about-content section.onyo-leaders ul li, .page-template-page-aboutus section.onyo-leaders ul li {
       padding: 0 0 0.3em 0; }
-  .about-content section.onyo-leaders .mdl-grid > .mdl-cell {
+  .about-content section.onyo-leaders .mdl-grid > .mdl-cell, .page-template-page-aboutus section.onyo-leaders .mdl-grid > .mdl-cell {
     text-align: center; }
-.about-content section.join-us {
+.about-content section.join-us, .page-template-page-aboutus section.join-us {
   background: transparent url(assets/about/join-us.png) left top/cover no-repeat; }
 
 form.onyo-form .mdl-textfield {
@@ -460,5 +460,58 @@ form.onyo-form button {
       border-color: #32AAE4; }
     .onyo-slider .onyo-slider-buttons li a.current:hover {
       background-color: #32AAE4; }
+
+.single-post main .mdl-grid:last-child {
+  background-color: #fff; }
+.single-post article header h1 a {
+  color: #2F4472;
+  font-size: 0.665em;
+  text-decoration: none; }
+.single-post article header .entry-meta {
+  color: #32AAE4;
+  font-size: 1.285em; }
+.single-post article .entry-content {
+  color: #2F4472;
+  padding-top: 1em; }
+  .single-post article .entry-content p {
+    font-size: 1em;
+    margin: 1em 0 0; }
+.single-post aside {
+  background-color: #e7e7f3;
+  padding: 1.865em; }
+  .single-post aside ul, .single-post aside li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .single-post aside h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 0;
+    color: #32AAE4; }
+  .single-post aside a {
+    color: #2F4472;
+    text-decoration: none; }
+  .single-post aside a:hover {
+    color: #000; }
+  .single-post aside a:before {
+    content: "\003e";
+    font-weight: bold;
+    padding: 0 0.6em 0.6em 0;
+    color: #32AAE4; }
+
+.page-template-page-press .press-wrapper {
+  padding: 2em;
+  text-align: center;
+  border: 0.063em solid #32AAE4;
+  margin: 0 2em; }
+  .page-template-page-press .press-wrapper h4 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2F4472; }
+  .page-template-page-press .press-wrapper p {
+    font-size: 0.9em;
+    color: #2F4472; }
+.page-template-page-press main .mdl-grid:last-child {
+  background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
