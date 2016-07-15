@@ -1,25 +1,20 @@
 (function() {
 'use strict';
 
-function onyoHorizontalSlider(holder_element, width_constant) {
-
-	var me=this;
-
-	me.holder_element=holder_element;
-	me.width_constant=width_constant;
-
-	me.start= _start;
-
-	function _start(miliseconds) {
-		window.setTimeout(function() {
-			console.log('Move to next element ...');
-		}, miliseconds);
-	}
-}
-
 $(document).ready(function(){
-	var slider= new onyoHorizontalSlider($('.onyo-slider-wrapper'), $('.onyo-slider').height());
-	slider.start(2000);
+	$('.onyo-slider-wrapper').addClass('remove-scroll-x');
+	$('a[href^="#"]').on('click', function(event) {
+		$('a.current').removeClass('current');
+
+	    var target = $(this.getAttribute('href'));
+	    if( target.length ) {
+	        event.preventDefault();
+	        $(this).addClass('current');
+	        $('.onyo-slider-wrapper').stop().animate({
+	            scrollLeft: target.offset().left
+	        }, 1000);
+	    }
+	});
 });
 
 })();

@@ -148,6 +148,10 @@ section.how-it-works {
     section.how-it-works .mobile-screens-samples-wrapper img:last-child {
       right: 0; }
 
+/* Styling Content Block: Clients */
+section.onyo-clients .onyo-slider-wrapper .mdl-cell {
+  text-align: center; }
+
 /* Styling Content Block: Contact us */
 section.contact-us button.mdl-button {
   font-size: 1.2em;
@@ -329,12 +333,78 @@ form.onyo-form button {
   .company-purpose .mdl-grid .mdl-cell:last-child .bubble .round-message p {
     padding: 28% 10%; }
 
-.onyo-slider {
-  border: 2px solid #000; }
-  .onyo-slider .onyo-slider-wrapper {
-    display: flex;
-    overflow-x: auto; }
-    .onyo-slider .onyo-slider-wrapper > div {
-      flex: 0 0 auto; }
+@keyframes colorchange {
+  0% {
+    background: white; }
+  100% {
+    background: #2F4472; } }
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */ {
+  0% {
+    background: white; }
+  100% {
+    background: #2F4472; } }
+@keyframes bordersizing {
+  0% {
+    border-color: #2F4472; }
+  100% {
+    border-color: #32AAE4; } }
+@-webkit-keyframes bordersizing /* Safari and Chrome - necessary duplicate */ {
+  0% {
+    border-color: #2F4472; }
+  100% {
+    border-color: #32AAE4; } }
+@keyframes revertbordersizing {
+  0% {
+    border-color: #32AAE4; }
+  100% {
+    border-color: #2F4472; } }
+@-webkit-keyframes revertbordersizing /* Safari and Chrome - necessary duplicate */ {
+  0% {
+    border-color: #32AAE4; }
+  100% {
+    border-color: #2F4472; } }
+.onyo-slider .onyo-slider-wrapper {
+  display: flex;
+  overflow-x: auto; }
+  .onyo-slider .onyo-slider-wrapper > div {
+    flex: 0 0 auto; }
+  .onyo-slider .onyo-slider-wrapper a {
+    visibility: hidden; }
+.onyo-slider .remove-scroll-x {
+  overflow-x: hidden; }
+.onyo-slider .onyo-slider-buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  .onyo-slider .onyo-slider-buttons li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    position: relative; }
+    .onyo-slider .onyo-slider-buttons li a {
+      border: 0.4em solid #2F4472;
+      border-radius: 50%;
+      display: block;
+      height: 0.5em;
+      text-indent: -5000px;
+      width: 0.5em;
+      animation: revertbordersizing 0.5s;
+      -webkit-animation: revertbordersizing 0.5s;
+      position: absolute;
+      top: 0.2em;
+      left: 0.2em; }
+    .onyo-slider .onyo-slider-buttons li a.current {
+      animation: colorchange 1s;
+      -webkit-animation: colorchange 1s;
+      background-color: #2F4472; }
+    .onyo-slider .onyo-slider-buttons li a:hover {
+      animation: bordersizing 0.5s;
+      -webkit-animation: bordersizing 0.5s;
+      border-color: #32AAE4; }
+    .onyo-slider .onyo-slider-buttons li a.current:hover {
+      background-color: #32AAE4; }
 
 /*# sourceMappingURL=main.css.map */
