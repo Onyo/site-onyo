@@ -8,6 +8,59 @@ $lightBlue: #32AAE4;
 
 
 /* Styling */
+
+.mdl-navigation {
+	.for-restaurants-button {
+	    font-size: 0.865em;
+	    line-height: 3em;
+	    background-color: $lightBlue;
+	    margin-right: 3em;
+	}
+
+	.change-lang {
+		font-size: 0.785em;
+		font-weight: bold;
+		padding: 0 14px;
+	}
+
+	.change-lang:hover {
+		color: $lightBlue;
+	}
+
+	.change-lang.current {
+		font-size:0.985em;
+		color: $lightBlue;
+	}
+
+	.change-lang.current:hover {
+		font-size:0.985em;
+		color: $mainBlue;
+	}
+}
+
+.mdl-layout__drawer  {
+	background: #2f4472; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #2f4472 0%, #337687 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #2f4472 0%,#337687 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #2f4472 0%,#337687 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f4472', endColorstr='#337687',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	a, .mdl-navigation .mdl-navigation__link {
+	    color: #9ad8f4;
+	    font-size: 1.4em;
+	    font-weight: bold;
+	}
+
+	a:hover, .mdl-navigation .mdl-navigation__link:hover {
+		background-color: transparent;
+		color: #fff;
+	}
+}
+
+.mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title {
+	padding-top: 1em;
+}
+
 main {
 	width: 100%;
 
@@ -238,8 +291,26 @@ section.onyo-clients {
 		}
 	}
 }
+/* Styling Content Block: What is it */
+section.what-is {
+	min-height: 42em;
+
+	.mdl-grid {
+		span {
+		    border-radius: 50%;
+		    display: block;
+		    height: 5em;
+		    margin: 0 auto 2em;
+		    padding: 2em;
+		    width: 5em;
+			border: 0.063em solid $lightBlue;
+		}
+	}
+}
 /* Styling Content Block: Contact us */
 section.contact-us {
+	min-height: 42em;
+
 	button.mdl-button{
 		font-size:1.2em;
 		height: 4em;
