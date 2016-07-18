@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         tasks: ['sass']
       },
       files: ['public/**'],
-      tasks: ''
+      tasks: 'copy'
     },
 
     express: {
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           port: 3000,
           hostname: 'localhost',
           bases: [
-            './public'
+            './dist'
           ],
           livereload: true
         }
@@ -45,8 +45,24 @@ module.exports = function(grunt) {
           verbose: true
         }
       }
+    },
+
+    copy: {
+      main: {
+        files: [
+          // includes files within path
+          {expand: true, cwd: '<%=app.public%>/css', src: ['*.css'], dest: 'dist/css'},
+          {expand: true, cwd: '<%=app.public%>/css/assets', src: ['**'], dest: 'dist/css/assets'},
+          {expand: true, cwd: '<%=app.public%>/images', src: ['**'], dest: 'dist/images'},
+          {expand: true, cwd: '<%=app.public%>/lib', src: ['**'], dest: 'dist/lib'},
+          {expand: true, cwd: '<%=app.public%>/', src: ['*.html'], dest: 'dist/'}
+        ],
+      },
     }
+
   });
+
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.loadNpmTasks('grunt-contrib-sass');
 
