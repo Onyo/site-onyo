@@ -1,0 +1,378 @@
+/* Basic Responsive settings */
+$break-small: 320px;
+$break-large: 1200px;
+
+/* Main Setting */
+$mainBlue: #2F4472;
+$lightBlue: #32AAE4;
+
+
+/* Styling */
+
+.mdl-navigation {
+	.for-restaurants-button {
+	    font-size: 0.865em;
+	    line-height: 3em;
+	    background-color: $lightBlue;
+	    margin-right: 3em;
+	}
+
+	.change-lang {
+		font-size: 0.785em;
+		font-weight: bold;
+		padding: 0 14px;
+	}
+
+	.change-lang:hover {
+		color: $lightBlue;
+	}
+
+	.change-lang.current {
+		font-size:0.985em;
+		color: $lightBlue;
+	}
+
+	.change-lang.current:hover {
+		font-size:0.985em;
+		color: $mainBlue;
+	}
+}
+
+.mdl-layout__drawer  {
+	background: #2f4472; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #2f4472 0%, #337687 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #2f4472 0%,#337687 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #2f4472 0%,#337687 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f4472', endColorstr='#337687',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	a, .mdl-navigation .mdl-navigation__link {
+	    color: #9ad8f4;
+	    font-size: 1.4em;
+	    font-weight: bold;
+	}
+
+	a:hover, .mdl-navigation .mdl-navigation__link:hover {
+		background-color: transparent;
+		color: #fff;
+	}
+}
+
+.mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title {
+	padding-top: 1em;
+}
+
+main {
+	width: 100%;
+
+	form {
+		max-width: 50em;
+		margin: 0 auto;
+	}
+}
+
+/* Start section styling */
+.section-header {
+	padding: 1.5em 0 1em 0;
+	text-align: center;
+	margin: 0 0 1em 0;
+	span {
+		font-weight: bold;
+	}
+}
+
+.section-secondary-header {
+	font-weight: bold;
+	font-size: 1.635em;
+}
+
+.section-main-message {
+	font-size: 1em;
+}
+
+section {
+	background-size: cover;
+	h2 {
+		@extend .section-header;
+	}
+	h3 {
+		@extend .section-secondary-header;
+	}
+	p {
+		@extend .section-main-message;
+	}
+	a.mdl-button--colored  {
+	    font-size: 1.2em;
+	    padding: 0.5em 2em;
+	}
+}
+
+section.even {
+	background-color:#fff;
+	.section-header {
+		background: transparent url("assets/section-header-separator-even.gif") bottom center no-repeat;
+	}
+	h2, h3, p {
+		color: $mainBlue;
+	}
+}
+
+section.odd {
+	.section-header {
+		background: transparent url("assets/section-header-separator-odd.gif") bottom center no-repeat;
+	}
+	h2, h3, p {
+		color: #fff;
+	}
+}
+/* End section styling */
+
+
+footer.mdl-mega-footer {
+	background-color: $mainBlue;
+}
+
+.main-bg.main-home-bg , body.home .main-home-bg {
+  height: 813px;
+  object-fit: contain;
+}
+
+.main-home-bg, body.home .main-home-bg {
+	background: transparent url("assets/main-bg-home.png") top center no-repeat;
+}
+
+.main-text-banner, .main-text-banner * {
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1em;
+	color: #fff;
+
+	.main-message {
+		font-size: 1.5em;
+		line-height: 1em;
+		display: block;
+	}
+}
+
+.main-text-banner {
+    margin-top: 2em;
+    min-height: 6em;
+
+    p {
+		background-image: none;
+		padding-bottom: 0.5em;
+    }
+}
+
+.home-content, body.home {
+	.main-text-banner {
+		margin-top: 5em;
+		min-height: 22em;
+
+		p {
+			background: transparent url("assets/main-banner-text-onyo-logo.png") bottom center no-repeat;
+			padding-bottom: 2em;
+			line-height:2em;
+		}
+	}
+
+	.main-text-banner, .main-text-banner * {
+		.main-message {
+			font-size: 1.800em;
+		}
+
+		@media screen and (min-width: $break-large) {
+			.main-message {
+				font-size: 2.800em;
+			}
+		}
+	}	
+}
+
+/* Styling Content Block: What is it */
+.what-is-it-block {
+	color: #2f4472;
+	text-align: center;
+	padding: 0.5em;
+}
+
+/* Styling Content Block: About us */
+.secondary-bg {
+	min-height: 68.188em;
+	object-fit: contain;
+
+	h3 {
+		font-size: 2.5em;
+	}
+
+	h3 + p {
+		font-size: 1.685em;
+	}
+} 
+
+section.about-us {
+	background: transparent url("assets/secondary-bg-about-us.png") left top / cover no-repeat;
+}
+
+.mdl-cell.carrers {
+	@media screen and (min-width: $break-large) {
+		border-left: 1px solid #fff;
+		padding-left: 1.5em;
+	}
+
+	@media screen and (max-width: $break-small) {
+		border-top: 1px solid #fff;
+		padding-top: 1.5em;
+	}
+}
+
+.job-position-description {
+	@media screen and (min-width: $break-large) {
+		border-left: 1px solid #fff;
+		padding-left: 1.5em;
+	}
+
+	@media screen and (max-width: $break-small) {
+		border-bottom: 1px solid #fff;
+		padding-bottom: 1.5em;
+	}
+}
+
+/* Styling Content Block: How it works */
+section.how-it-works {
+	background: transparent url("assets/secondary-bg-how-works.png") left top / cover no-repeat;
+
+	.mobile-screens-samples-wrapper {
+		position: relative;
+		height: 38em;
+
+		@media screen and (min-width: $break-large) {
+			max-width: 50em;
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width: $break-small) {
+			height: 22em;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+
+			@media screen and (max-width: $break-small) {
+				height: 22em;
+			}
+
+			opacity: 0.8;
+		}
+
+		img:first-child + img {
+			z-index:9;	
+
+			left: 50%;
+			margin-left: -10em;	
+
+			opacity: 1;
+
+			@media screen and (max-width: $break-small) {
+				margin-left:-5em;
+			}
+		}
+
+		img:last-child {
+			right: 0;
+		}
+	}
+}
+/* Styling Content Block: Clients */
+section.onyo-clients {
+	.onyo-slider-wrapper {
+		.mdl-cell {
+			text-align: center;
+		}
+	}
+}
+/* Styling Content Block: What is it */
+section.what-is {
+	min-height: 42em;
+
+	.mdl-grid {
+		span {
+		    border-radius: 50%;
+		    display: block;
+		    height: 5em;
+		    margin: 0 auto 2em;
+		    padding: 2em;
+		    width: 5em;
+			border: 0.063em solid $lightBlue;
+		}
+	}
+}
+/* Styling Content Block: Contact us */
+section.contact-us {
+	min-height: 42em;
+
+	button.mdl-button{
+		font-size:1.2em;
+		height: 4em;
+		width:14em;
+	}
+}
+/* Styling Block: Footer */
+footer {
+	* {
+		color: #fff;
+	}
+
+	h3 {
+		text-align: center;
+		span {
+		    display: block;
+		    font-size: 0.5em;
+		    font-weight: normal;
+		}
+	}
+
+	ul, li {
+		list-style: outside none none;
+	}
+
+	a {
+		text-decoration:none;
+	}
+
+	a.light-blue {
+		color: $lightBlue;
+		font-weight: bold;
+	}
+
+	div.navigation-block {
+		@media screen and (min-width: $break-large) {
+			border-right: 1px solid $lightBlue;
+		}
+	}
+
+	div.contact {
+	    display: flex;
+	    justify-content: center;
+  		align-items: center;
+	}
+
+	a.functional-image-onyo-logo {
+	    display: flex;
+	    height:100%;
+	    justify-content: center;
+  		align-items: center;	    
+
+	    img {
+	    	height:32px;
+	    	width:93px;
+	    }
+	}
+}
+
+@import 'about';
+@import 'contactus';
+@import 'restaurants';
+@import 'onyo.bxslider';
+@import 'blog';
+@import 'press';

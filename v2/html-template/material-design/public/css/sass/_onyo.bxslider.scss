@@ -1,0 +1,103 @@
+@keyframes colorchange
+{
+  0%   {background: white;}
+  100% {background: $mainBlue;}
+}
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+{
+  0%   {background: white;}
+  100% {background: $mainBlue;}
+}
+@keyframes bordersizing
+{
+  0%   {border-color: $mainBlue;}
+  100% {border-color: $lightBlue;}
+}
+@-webkit-keyframes bordersizing /* Safari and Chrome - necessary duplicate */
+{
+  0%   {border-color: $mainBlue;}
+  100% {border-color: $lightBlue;}
+}
+@keyframes revertbordersizing
+{
+  0%   {border-color: $lightBlue;}
+  100% {border-color: $mainBlue;}
+}
+@-webkit-keyframes revertbordersizing /* Safari and Chrome - necessary duplicate */
+{
+  0%   {border-color: $lightBlue;}
+  100% {border-color: $mainBlue;}
+}
+
+.onyo-slider {
+
+	.onyo-slider-wrapper {
+		display: flex;
+
+		overflow-x:auto; 
+
+		>div {
+			flex: 0 0 auto;
+		}
+
+		a {
+			visibility: hidden;
+		}
+	}
+
+	.remove-scroll-x {
+		overflow-x: hidden;
+	}
+
+	.onyo-slider-buttons {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+
+		text-align: center;
+
+		li {
+			margin: 0;
+			padding: 0;
+
+		    display: inline-block;
+		    height: 1.5em;
+		    width: 1.5em;
+
+			position: relative;
+
+			a {
+			    border: 0.4em solid $mainBlue;
+			    border-radius: 50%;
+			    display: block;
+			    height: 0.5em;
+			    text-indent: -5000px;
+			    width: 0.5em;
+		      	animation: revertbordersizing 0.5s;
+		      	-webkit-animation: revertbordersizing 0.5s;
+
+		      	position: absolute;
+
+		      	top: 0.2em;
+		      	left:0.2em;
+			}
+
+			a.current {
+		      animation: colorchange 1s;
+		      -webkit-animation: colorchange 1s;
+		      background-color: $mainBlue;
+			}
+
+			a:hover {
+		      animation: bordersizing 0.5s;
+		      -webkit-animation: bordersizing 0.5s;
+		      border-color: $lightBlue;
+			}
+
+			a.current:hover {
+		      background-color: $lightBlue;
+			}
+		}
+	}
+}

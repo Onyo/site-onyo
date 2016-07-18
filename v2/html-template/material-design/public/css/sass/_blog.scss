@@ -1,0 +1,68 @@
+.single-post {
+	main {
+		.mdl-grid:last-child {
+			background-color: #fff;
+		}
+	}
+
+	article {
+		header {
+			h1 {
+				a {
+					color: $mainBlue;
+				    font-size: 0.665em;
+				    text-decoration: none;
+				}
+			}
+
+			.entry-meta {
+				color: $lightBlue;
+				font-size: 1.285em;
+			}
+		}
+
+		.entry-content {
+			color: $mainBlue;
+			padding-top: 1em;
+
+			p {
+			    font-size: 1em;
+			    margin: 1em 0 0;
+			}
+		}
+	}
+
+	aside {
+		background-color: #e7e7f3;
+		padding: 1.865em;
+
+		ul, li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		h3 {
+		    font-size: 1.6em;
+		    font-weight: bold;
+		    padding: 0;
+			color: $lightBlue;
+		}
+
+		a {
+			color:$mainBlue;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #000;
+		}
+
+		a:before {
+			content: "\003e";
+			font-weight: bold;
+			padding: 0 0.6em 0.6em 0;
+			color: $lightBlue;
+		}
+	}
+}

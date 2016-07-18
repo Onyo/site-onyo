@@ -2,3 +2,6 @@ node_modules/
 bower_components/
 .sass-cache/
 assets/css/style.css.map
+v2/html-template/material-design/bower_components/
+v2/html-template/material-design/node_modules/
+v2/html-template/material-design/.sass-cache/
