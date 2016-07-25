@@ -47,6 +47,8 @@
 
 	.remove-scroll-x {
 		overflow-x: hidden;
+	    margin: 0 auto;
+	    max-width: 1024px;
 	}
 
 	.onyo-slider-buttons {

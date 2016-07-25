@@ -9,7 +9,7 @@ add_theme_support( 'post-thumbnails' );
 global $content_width;
 if ( ! isset( $content_width ) ) $content_width = 640;
 register_nav_menus(
-array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
+array( 'main-menu' => __( 'Menu', 'blankslate' ) )
 );
 }
 add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
@@ -64,4 +64,24 @@ return count( $comments_by_type['comment'] );
 } else {
 return $count;
 }
+}
+
+function onyotheme_comment($comment, $args, $depth) {
+?>
+	<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--12-col mdl-cell--2-col-desktop">
+			<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+		</div>
+		<div class="mdl-cell mdl-cell--12-col mdl-cell--10-col-desktop comment-wrapper">
+			<?php printf( __( '<cite class="fn">%s</cite>' ), get_comment_author_link() ); ?>
+			<p><?php comment_text(); ?></p>
+			<p><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+		        <?php
+		        /* translators: 1: date, 2: time */
+		        printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
+		        ?>
+        	</p>
+		</div>
+	</div>
+<?php
 }

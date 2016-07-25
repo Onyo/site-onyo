@@ -53,6 +53,16 @@
 	margin-top: -8px;
 }
 
+.wpcf7-form {
+	.mdl-textfield {
+		height: 4.395em;
+	}
+	
+	.mdl-textarea {
+		height: 9em;
+	}
+}
+
 @media screen and (min-width: $break-large) {
 	.contact-us-wrapper {
 		padding: 8em 0;

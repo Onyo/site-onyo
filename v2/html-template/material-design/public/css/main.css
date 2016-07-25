@@ -1,6 +1,9 @@
 /* Basic Responsive settings */
 /* Main Setting */
 /* Styling */
+@media screen and (min-width: 1200px) {
+  html, body {
+    max-width: 1024px; } }
 .mdl-navigation .for-restaurants-button {
   font-size: 0.865em;
   line-height: 3em;
@@ -79,6 +82,9 @@ section.odd .section-header, section.odd h2 {
   background: transparent url("assets/section-header-separator-odd.gif") bottom center no-repeat; }
 section.odd h2, section.odd h3, section.odd p {
   color: #fff; }
+
+section.onyo-clients {
+  min-height: 40em; }
 
 /* End section styling */
 footer.mdl-mega-footer {
@@ -213,36 +219,38 @@ section.contact-us {
     width: 14em; }
 
 /* Styling Block: Footer */
-footer * {
-  color: #fff; }
-footer h3 {
-  text-align: center; }
-  footer h3 span {
-    display: block;
-    font-size: 0.5em;
-    font-weight: normal; }
-footer ul, footer li {
-  list-style: outside none none; }
-footer a {
-  text-decoration: none; }
-footer a.light-blue {
-  color: #32AAE4;
-  font-weight: bold; }
-@media screen and (min-width: 1200px) {
-  footer div.navigation-block {
-    border-right: 1px solid #32AAE4; } }
-footer div.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-footer a.functional-image-onyo-logo {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center; }
-  footer a.functional-image-onyo-logo img {
-    height: 32px;
-    width: 93px; }
+footer {
+  margin-top: -0.385em; }
+  footer * {
+    color: #fff; }
+  footer h3 {
+    text-align: center; }
+    footer h3 span {
+      display: block;
+      font-size: 0.5em;
+      font-weight: normal; }
+  footer ul, footer li {
+    list-style: outside none none; }
+  footer a {
+    text-decoration: none; }
+  footer a.light-blue {
+    color: #32AAE4;
+    font-weight: bold; }
+  @media screen and (min-width: 1200px) {
+    footer div.navigation-block {
+      border-right: 1px solid #32AAE4; } }
+  footer div.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer a.functional-image-onyo-logo {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center; }
+    footer a.functional-image-onyo-logo img {
+      height: 32px;
+      width: 93px; }
 
 .about-content .team-picture-holder img, .page-template-page-aboutus .team-picture-holder img {
   height: 30.143em;
@@ -312,6 +320,11 @@ form.onyo-form button {
 .contactuc-content + footer {
   margin-top: -8px; }
 
+.wpcf7-form .mdl-textfield {
+  height: 4.395em; }
+.wpcf7-form .mdl-textarea {
+  height: 9em; }
+
 @media screen and (min-width: 1200px) {
   .contact-us-wrapper {
     padding: 8em 0; }
@@ -367,6 +380,9 @@ form.onyo-form button {
     position: absolute;
     top: 0; }
 
+@media screen and (min-width: 1200px) {
+  .company-purpose {
+    min-height: 50em; } }
 .company-purpose .mdl-grid .mdl-cell:first-child .round-message:before {
   content: "1"; }
 .company-purpose .mdl-grid .mdl-cell:first-child .bubble {
@@ -377,6 +393,9 @@ form.onyo-form button {
 .company-purpose .mdl-grid .mdl-cell:first-child + .mdl-cell .bubble {
   width: 20em;
   height: 20em; }
+  @media screen and (min-width: 1200px) {
+    .company-purpose .mdl-grid .mdl-cell:first-child + .mdl-cell .bubble {
+      margin-top: 6em; } }
   .company-purpose .mdl-grid .mdl-cell:first-child + .mdl-cell .bubble .round-message p {
     padding: 28% 10%; }
 .company-purpose .mdl-grid .mdl-cell:last-child .round-message:before {
@@ -425,7 +444,9 @@ form.onyo-form button {
   .onyo-slider .onyo-slider-wrapper a {
     visibility: hidden; }
 .onyo-slider .remove-scroll-x {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 1024px; }
 .onyo-slider .onyo-slider-buttons {
   margin: 0;
   padding: 0;
@@ -461,42 +482,84 @@ form.onyo-form button {
     .onyo-slider .onyo-slider-buttons li a.current:hover {
       background-color: #32AAE4; }
 
-.single-post main .mdl-grid:last-child {
+.single-post main .mdl-grid:last-child, body.blog main .mdl-grid:last-child {
   background-color: #fff; }
-.single-post article header h1 a {
+.single-post article header h1 a, body.blog article header h1 a {
   color: #2F4472;
   font-size: 0.665em;
   text-decoration: none; }
-.single-post article header .entry-meta {
+.single-post article header .entry-meta, body.blog article header .entry-meta {
   color: #32AAE4;
   font-size: 1.285em; }
-.single-post article .entry-content {
+.single-post article .entry-content, body.blog article .entry-content {
   color: #2F4472;
   padding-top: 1em; }
-  .single-post article .entry-content p {
+  .single-post article .entry-content p, body.blog article .entry-content p {
     font-size: 1em;
     margin: 1em 0 0; }
-.single-post aside {
+.single-post aside, body.blog aside {
   background-color: #e7e7f3;
   padding: 1.865em; }
-  .single-post aside ul, .single-post aside li {
+  .single-post aside ul, .single-post aside li, body.blog aside ul, body.blog aside li {
     list-style: none;
     margin: 0;
     padding: 0; }
-  .single-post aside h3 {
+  .single-post aside h3, body.blog aside h3 {
     font-size: 1.6em;
     font-weight: bold;
     padding: 0;
     color: #32AAE4; }
-  .single-post aside a {
+  .single-post aside a, body.blog aside a {
     color: #2F4472;
     text-decoration: none; }
-  .single-post aside a:hover {
+  .single-post aside a:hover, body.blog aside a:hover {
     color: #000; }
-  .single-post aside a:before {
+  .single-post aside a:before, body.blog aside a:before {
     content: "\003e";
     font-weight: bold;
     padding: 0 0.6em 0.6em 0;
+    color: #32AAE4; }
+  .single-post aside .searchform, body.blog aside .searchform {
+    border: 1px solid #2F4472;
+    padding: 0 3.5em 0 1em;
+    position: relative; }
+    .single-post aside .searchform div.mdl-textfield, body.blog aside .searchform div.mdl-textfield {
+      width: 100%; }
+    .single-post aside .searchform i, body.blog aside .searchform i {
+      position: absolute;
+      right: 0.5em;
+      top: 1em; }
+.single-post .comments, .single-post h3.comment-reply-title, body.blog .comments, body.blog h3.comment-reply-title {
+  border-top: 1px solid #32AAE4;
+  margin-top: 1em; }
+.single-post .comment-wrapper, body.blog .comment-wrapper {
+  padding: 1em;
+  background-color: #e7e7f3; }
+  .single-post .comment-wrapper p, body.blog .comment-wrapper p {
+    color: #2F4472; }
+  .single-post .comment-wrapper cite, body.blog .comment-wrapper cite {
+    display: block;
+    padding-bottom: 1em; }
+.single-post h3.comments-title, .single-post h3.comment-reply-title, body.blog h3.comments-title, body.blog h3.comment-reply-title {
+  font-size: 1em;
+  color: #32AAE4; }
+.single-post .comment-form label, body.blog .comment-form label {
+  display: block;
+  color: #32AAE4; }
+.single-post .comment-form textarea, body.blog .comment-form textarea {
+  background-color: #e7e7f3;
+  padding: 0.5em;
+  border: 0; }
+
+.blog article {
+  padding-bottom: 8em; }
+  .blog article header {
+    padding-bottom: 1em; }
+  .blog article h2 a {
+    text-decoration: none;
+    color: #2F4472;
+    font-weight: bold; }
+  .blog article h2 a:hover {
     color: #32AAE4; }
 
 .page-template-page-press .press-wrapper {

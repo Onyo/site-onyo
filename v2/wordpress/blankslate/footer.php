@@ -11,28 +11,31 @@
 			<div class="mdl-cell mdl-cell--3-col-desktop navigation-block">
 		      	<nav class="mdl-navigation">
 		      		<ul>  
-			        	<li><a class="light-blue" title="FOR RESTAURANTS" href="">FOR RESTAURANTS</a></li>
-			        	<li><a title="ABOUT" href="">ABOUT</a></li>
-			        	<li><a title="CAREERS" href="">CAREERS</a></li>
-			        	<li><a title="PRESS" href="">PRESS</a></li>
-			        	<li><a title="BLOG" href="">BLOG</a></li>
-			        	<li><a title="HELP" href="">HELP</a></li>
-			        	<li><a title="USABILITY" href="">USABILITY</a></li>
-			        	<li><a title="GUIDELINES" href="">GUIDELINES</a></li>
-			        	<li><a title="PRIVACY" href="">PRIVACY</a></li>
-			        	<li><a title="GUIDELINES" href="">GUIDELINES</a></li>
+						<?php 
+							$newsArgs = array( 'post_type' => 'footer-navigation', 'order'=> 'ASC'); 
+							$newsLoop = new WP_Query( $newsArgs ); 
+
+							while ( $newsLoop->have_posts() ) : $newsLoop->the_post(); ?>
+							<li><a class="<?php the_field('highlightclass'); ?>" title="<?php the_field('title'); ?>" href="<?php the_field('href'); ?>"><?php the_field('label'); ?></a></li>
+						<?php endwhile; ?>
 		      		</ul>
 		      	</nav>
 			</div>
-			<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--1-offset-desktop contact">
-				<h3>NY <span>+1 (408) 890-2102</span></h3>
-			</div>
-			<div class="mdl-cell mdl-cell--2-col-desktop contact">
-				<h3>RJ <span>+55 (21) 3942-2102</span></h3>
-			</div>
-			<div class="mdl-cell mdl-cell--2-col-desktop contact">
-				<h3>SP <span>+55 (21) 3942-2102</span></h3>
-			</div>
+			<?php 
+				$newsArgs = array( 'post_type' => 'contact-phone', 'posts_per_page' => 3); 
+				$newsLoop = new WP_Query( $newsArgs ); 
+
+				while ( $newsLoop->have_posts() ) : $newsLoop->the_post(); ?>
+					<div class="mdl-cell mdl-cell--2-col-desktop mdl-cell--1-offset-desktop contact">
+						<h3>NY <span><?php the_field('nyphone'); ?></span></h3>
+					</div>
+					<div class="mdl-cell mdl-cell--2-col-desktop contact">
+						<h3>RJ <span><?php the_field('rjphone'); ?></span></h3>
+					</div>
+					<div class="mdl-cell mdl-cell--2-col-desktop contact">
+						<h3>SP <span><?php the_field('spphone'); ?></span></h3>
+					</div>
+			<?php endwhile; ?>
 		</div>
 	</div>
 </footer>

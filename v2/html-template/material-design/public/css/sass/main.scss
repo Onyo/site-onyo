@@ -9,6 +9,12 @@ $lightBlue: #32AAE4;
 
 /* Styling */
 
+@media screen and (min-width: $break-large) {
+	html, body {
+		max-width: 1024px;
+	}
+}
+
 .mdl-navigation {
 	.for-restaurants-button {
 	    font-size: 0.865em;
@@ -123,6 +129,10 @@ section.odd {
 	h2, h3, p {
 		color: #fff;
 	}
+}
+
+section.onyo-clients {
+	min-height: 40em;
 }
 /* End section styling */
 
@@ -319,6 +329,8 @@ section.contact-us {
 }
 /* Styling Block: Footer */
 footer {
+	margin-top: -0.385em;
+
 	* {
 		color: #fff;
 	}

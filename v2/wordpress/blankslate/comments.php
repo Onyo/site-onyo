@@ -14,7 +14,7 @@ if ( ! empty( $comments_by_type['comment'] ) ) :
 </nav>
 <?php endif; ?>
 <ul>
-<?php wp_list_comments( 'type=comment' ); ?>
+<?php wp_list_comments( 'type=comment&callback=onyotheme_comment' ); ?>
 </ul>
 <?php if ( get_comment_pages_count() > 1 ) : ?>
 <nav id="comments-nav-below" class="comments-navigation" role="navigation">

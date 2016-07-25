@@ -78,6 +78,11 @@
 }
 
 .company-purpose {
+	
+	@media screen and (min-width: $break-large) {
+		min-height: 50em;
+	}
+
 	.mdl-grid {
 		.mdl-cell:first-child {
 			.round-message:before {
@@ -91,11 +96,17 @@
 		}
 
 		.mdl-cell:first-child + .mdl-cell {
+
 			.round-message:before {
 				content: "2";
 			}
 
 			.bubble {
+
+				@media screen and (min-width: $break-large) {
+					margin-top: 6em;
+				}
+
 				width: 20em;
 				height: 20em;
 				.round-message {

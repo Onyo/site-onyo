@@ -1,4 +1,4 @@
-.single-post {
+.single-post, body.blog {
 	main {
 		.mdl-grid:last-child {
 			background-color: #fff;
@@ -63,6 +63,82 @@
 			font-weight: bold;
 			padding: 0 0.6em 0.6em 0;
 			color: $lightBlue;
+		}
+
+		.searchform {
+			border: 1px solid $mainBlue;
+			padding: 0 3.5em 0 1em;
+			position: relative;
+
+			div.mdl-textfield {
+			   width: 100%;
+			}
+
+			i {
+				position: absolute;
+			    right: 0.5em;
+			    top: 1em;
+			}
+		}
+	}
+
+	.comments, h3.comment-reply-title {
+		border-top: 1px solid $lightBlue;
+		margin-top: 1em;
+	}
+
+	.comment-wrapper {
+		padding: 1em;
+		background-color: #e7e7f3;
+
+		p {
+			color: $mainBlue;
+		}
+
+		cite {
+			display: block;
+			padding-bottom: 1em;
+		}
+	}
+
+	h3.comments-title, h3.comment-reply-title {
+		font-size: 1em;
+		color: $lightBlue;
+	}
+
+	.comment-form {
+		label {
+			display: block;
+			color: $lightBlue;
+		}
+
+		textarea {
+			background-color: #e7e7f3;
+			padding: 0.5em;
+			border: 0;
+		}
+	}
+}
+
+.blog {
+	article {
+		padding-bottom: 8em;
+
+		header {
+			padding-bottom: 1em;
+		}
+
+		h2 {				
+
+			a {
+				text-decoration: none;
+				color: $mainBlue;
+				font-weight: bold;	
+			}
+
+			a:hover {
+				color: $lightBlue;
+			}
 		}
 	}
 }
