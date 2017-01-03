@@ -45,7 +45,7 @@ companies = {
 			total = $(".all-company ul li").length;
 
 			$(".all-company ul li").sort(function(a, b) {
-				return parseInt(a.id) - parseInt(b.id);
+				return parseInt(a.name) - parseInt(b.name);
 			}).each(function() {
 				end++;
 				var elem = $(this);
