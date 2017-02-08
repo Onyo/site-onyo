@@ -31,6 +31,10 @@ var allcompanies = {
 		"numericalId": 108,
 		"name": "Creps BarraShopping",
 		"displayName": "Creps"
+	}, {
+		"numericalId": 100,
+		"name": "Subway Vila Olímpia",
+		"displayName": "Subway"
 	}]
 }
 

@@ -5,6 +5,19 @@ html
     color: #494949;
     background-color: #fff;
 }
+
+header
+{
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #2f4472;
+    img
+    {
+        max-width: 100px;
+    }
+}
 .container
 {
     width: 900px;
@@ -79,7 +92,7 @@ footer
     text-align: center;
 
     color: #fff;
-    background: #727272;
+    background: #2f4472;
     a
     {
         font-weight: bold;
@@ -97,8 +110,10 @@ footer
             float: left;
         }
     }
-    ul li{
+    ul li
+    {
         display: inline-block;
+
         margin: 0 20px;
     }
 }

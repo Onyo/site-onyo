@@ -3,3 +3,6 @@ bower_components/
 .sass-cache/
 assets/css/style.css.map
 assets/css/style.baked.css.map
+.DS_Store
+*/.DS_Store
+assets/css/*.map
