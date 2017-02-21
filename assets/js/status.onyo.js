@@ -71,39 +71,31 @@ var companies = {};
 
 companies = {
 	showCompany : function ( elem, fila, qnt, allcompanies ){
+		$(".all-company ul").append("<li id='" + elem.numericalId + "'><strong> " + elem.numericalId + " </strong> " + elem.name + "<b class='" + elem.status + "'>" + elem.status + "</b></li>");
 
 		if (fila===qnt) {
-			for (var i = 0; i < allcompanies.data.length; i++) {
-				var elem = allcompanies.data[i];
+			var end = 0,
+			total = $(".all-company ul li").length;
 
-				$(".all-company ul").append("<li id='" + elem.numericalId + "'><strong> " + elem.numericalId + " </strong> " + elem.name + "<b class='" + elem.status + "'>" + elem.status + "</b></li>");
+			$(".all-company ul li").sort(function(a, b) {
+				return parseInt(a.id) - parseInt(b.id);
+			}).each(function() {
+				end++;
+				var elem = $(this);
 
-				if (i+1 === allcompanies.data.length) {
-					var end = 0,
-					total = $(".all-company ul li").length;
+				elem.remove();
+				$(elem).appendTo(".all-company ul");
+				if (end === total) {
 
-					$(".all-company ul li").sort(function(a, b) {
-						return parseInt(a.id) - parseInt(b.id);
-					}).each(function() {
-						end++;
-						var elem = $(this);
+					$(".all-company ul").show();
 
-						elem.remove();
-						$(elem).appendTo(".all-company ul");
-						if (end === total) {
-
-							$(".all-company ul").show();
-
-							setTimeout(function(){
-								companies.loadComapny();
-							}, 300000);
-						}
-					});
+					setTimeout(function(){console.log('veio aqui 123');
+						companies.loadComapny();
+					}, 300000);
 				}
+			});
+
 			}
-
-
-		}
 
 	},
 	statusCompany : function ( elem, qnt, fila, allcompanies){
