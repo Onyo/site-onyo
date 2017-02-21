@@ -77,28 +77,32 @@ companies = {
 				var elem = allcompanies.data[i];
 
 				$(".all-company ul").append("<li id='" + elem.numericalId + "'><strong> " + elem.numericalId + " </strong> " + elem.name + "<b class='" + elem.status + "'>" + elem.status + "</b></li>");
-			}
-			
-			var end = 0,
-			total = $(".all-company ul li").length;
 
-			$(".all-company ul li").sort(function(a, b) {
-				return parseInt(a.id) - parseInt(b.id);
-			}).each(function() {
-				end++;
-				var elem = $(this);
+				if (i+1 === allcompanies.data.length) {
+					var end = 0,
+					total = $(".all-company ul li").length;
 
-				elem.remove();
-				$(elem).appendTo(".all-company ul");
-				if (end === total) {
+					$(".all-company ul li").sort(function(a, b) {
+						return parseInt(a.id) - parseInt(b.id);
+					}).each(function() {
+						end++;
+						var elem = $(this);
 
-					$(".all-company ul").show();
+						elem.remove();
+						$(elem).appendTo(".all-company ul");
+						if (end === total) {
 
-					setTimeout(function(){
-						companies.loadComapny();
-					}, 300000);
+							$(".all-company ul").show();
+
+							setTimeout(function(){
+								companies.loadComapny();
+							}, 300000);
+						}
+					});
 				}
-			});
+			}
+
+
 		}
 
 	},
