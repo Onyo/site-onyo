@@ -5,6 +5,10 @@ var allcompanies = {
 		"displayName": "Vivenda do Camarão",
 		"shopping": "BarraShopping"
 	}, {
+		"numericalId": 31,
+		"name": "Baked Potato Vila Olímpia",
+		"displayName": "Shopping Vila Olímpia"
+	},{
 		"numericalId": 29,
 		"name": "Fry's BarraShopping",
 		"displayName": "Fry's",
