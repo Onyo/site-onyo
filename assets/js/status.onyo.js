@@ -63,6 +63,16 @@ var allcompanies = {
     "name": "Patroni Pizza Vila Olímpia",
     "displayName": "Patroni Pizza",
     "shopping": "Vila Olímpia"
+  }, {
+    "numericalId": 121,
+    "name": "Gendai Vila Olímpia",
+    "displayName": "Gendai",
+    "shopping": "Vila Olímpia"
+  }, {
+    "numericalId": 120,
+    "name": "Pizza Hut Vila Olímpia",
+    "displayName": "Pizza Hut",
+    "shopping": "Vila Olímpia"
   }]
 }
 
