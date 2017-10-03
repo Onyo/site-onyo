@@ -73,6 +73,16 @@ var allcompanies = {
     "name": "Pizza Hut Vila Olímpia",
     "displayName": "Pizza Hut",
     "shopping": "Vila Olímpia"
+  }, {
+    "numericalId": 127,
+    "name": "Rock and Ribs Vila Olímpia",
+    "displayName": "Rock and Ribs",
+    "shopping": "Vila Olímpia"
+  }, {
+    "numericalId": 126,
+    "name": "Spoleto Vila Olímpia",
+    "displayName": "Spoleto",
+    "shopping": "Vila Olímpia"
   }]
 }
 
