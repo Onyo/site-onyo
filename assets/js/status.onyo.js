@@ -83,6 +83,41 @@ var allcompanies = {
     "name": "Spoleto Vila Olímpia",
     "displayName": "Spoleto",
     "shopping": "Vila Olímpia"
+  }, {
+    "numericalId": 134,
+    "name": "Burger Lab Pátio Paulista",
+    "displayName": "Burger Lab",
+    "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 135,
+    "name": "Bon Grillê Pátio Paulista",
+    "displayName": "Bon Grillê",
+    "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 140,
+    "name": "Gendai Pátio Paulista",
+    "displayName": "Gendai",
+    "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 136,
+    "name": "Mania de Churrasco Pátio Paulista",
+    "displayName": "Mania de Churrasco",
+    "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 133,
+    "name": "Piadina Pátio Paulista",
+    "displayName": "Piadina",
+    "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 137,
+    "name": "Pizza Hut Pátio Paulista",
+    "displayName": "Pizza Hut",
+    "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 128,
+    "name": "Vivenda do Camarão Pátio Paulista",
+    "displayName": "Vivenda do Camarão",
+    "shopping": "Pátio Paulista"
   }]
 }
 
