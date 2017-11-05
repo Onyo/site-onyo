@@ -118,6 +118,16 @@ var allcompanies = {
     "name": "Vivenda do Camarão Pátio Paulista",
     "displayName": "Vivenda do Camarão",
     "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 35,
+    "name": "Baked Potato Pátio Paulista",
+    "displayName": "Baked Potato",
+    "shopping": "Pátio Paulista"
+  }, {
+    "numericalId": 31,
+    "name": "Baked Potato Vila Olímpia",
+    "displayName": "Baked Potato",
+    "shopping": "Vila Olímpia"
   }]
 }
 
