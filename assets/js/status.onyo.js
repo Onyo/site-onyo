@@ -123,11 +123,6 @@ var allcompanies = {
     "name": "Baked Potato Pátio Paulista",
     "displayName": "Baked Potato",
     "shopping": "Pátio Paulista"
-  }, {
-    "numericalId": 31,
-    "name": "Baked Potato Vila Olímpia",
-    "displayName": "Baked Potato",
-    "shopping": "Vila Olímpia"
   }]
 }
 
